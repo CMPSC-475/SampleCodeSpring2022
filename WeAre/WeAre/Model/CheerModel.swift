@@ -11,7 +11,7 @@ import Foundation
 struct CheerModel {
     
     //Mark:- Constants
-    static let mascotImageNames = ("Mascot0", "Mascot1", "Mascot1Reversed")
+    static let mascotImageNames = ("Mascot", "Mascot1", "Mascot1Reversed")
     static let firstRoundCheers = ("We Are", "Penn State")
     static let secondRoundCheers = ("Thank You", "You're Welcome")
     static let firstRoundCount = 3

@@ -24,6 +24,9 @@ class CheerManager : ObservableObject {
         }
     }
     
+    var cheer1Visible  : Bool {cheerState == .weare}
+    var cheer2Visible : Bool {cheerState == .pennstate}
+    
     private var totalCheers : Int {1 + (CheerModel.firstRoundCount + CheerModel.secondRoundCount) * 2}
     private var currentRound : Int {(cheerModel.cheerCount+1)/2}
     private var isWeAreRound : Bool { currentRound <= CheerModel.firstRoundCount}

@@ -14,11 +14,12 @@ struct WeAreView: View {
             background
             VStack{
                 Spacer()
-                LionView(imageName: imageName)
+                LionView(imageName: cheerManager.cheerModel.mascotImageName)
                 Spacer()
-                CheeringTextView(cheerText: cheerText1)
-                CheeringTextView(cheerText: cheerText2)
-                CheerButton(cheerButtonText: "Cheer"){}
+                CheeringView()
+                CheerButton(cheerButtonText: "Cheer"){
+                    cheerManager.doCheer()
+                }
                 Spacer()
             }
         }
@@ -29,6 +30,7 @@ struct WeAreView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(imageName: "Mascot")
+        WeAreView()
+            .environmentObject(CheerManager())
     }
 }

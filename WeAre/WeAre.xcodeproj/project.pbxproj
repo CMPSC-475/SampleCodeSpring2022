@@ -14,12 +14,12 @@
 		C351EEAE27906E220018E442 /* WeAreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEAD27906E220018E442 /* WeAreUITests.swift */; };
 		C351EEB027906E220018E442 /* WeAreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEAF27906E220018E442 /* WeAreUITestsLaunchTests.swift */; };
 		C351EEBD2790A0920018E442 /* LionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEBC2790A0920018E442 /* LionView.swift */; };
-		C351EEBF2790A28F0018E442 /* CheeringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEBE2790A28F0018E442 /* CheeringTextView.swift */; };
 		C351EEC12790AB7C0018E442 /* CheerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEC02790AB7C0018E442 /* CheerButton.swift */; };
 		C36FC61B27970CE700F52638 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC61A27970CE700F52638 /* ViewConstants.swift */; };
 		C36FC61D27970F1C00F52638 /* WeAreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EE9427906E1C0018E442 /* WeAreView.swift */; };
 		C36FC62527987B1200F52638 /* CheerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62427987B1200F52638 /* CheerManager.swift */; };
 		C36FC62727987BFC00F52638 /* CheerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62627987BFC00F52638 /* CheerModel.swift */; };
+		C36FC62927988DEC00F52638 /* CheeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62827988DEC00F52638 /* CheeringView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +51,11 @@
 		C351EEAD27906E220018E442 /* WeAreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAreUITests.swift; sourceTree = "<group>"; };
 		C351EEAF27906E220018E442 /* WeAreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAreUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C351EEBC2790A0920018E442 /* LionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionView.swift; sourceTree = "<group>"; };
-		C351EEBE2790A28F0018E442 /* CheeringTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeringTextView.swift; sourceTree = "<group>"; };
 		C351EEC02790AB7C0018E442 /* CheerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerButton.swift; sourceTree = "<group>"; };
 		C36FC61A27970CE700F52638 /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		C36FC62427987B1200F52638 /* CheerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerManager.swift; sourceTree = "<group>"; };
 		C36FC62627987BFC00F52638 /* CheerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerModel.swift; sourceTree = "<group>"; };
+		C36FC62827988DEC00F52638 /* CheeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeringView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C351EE9427906E1C0018E442 /* WeAreView.swift */,
-				C351EEBE2790A28F0018E442 /* CheeringTextView.swift */,
+				C36FC62827988DEC00F52638 /* CheeringView.swift */,
 				C351EEBC2790A0920018E442 /* LionView.swift */,
 				C351EEC02790AB7C0018E442 /* CheerButton.swift */,
 				C36FC61A27970CE700F52638 /* ViewConstants.swift */,
@@ -302,7 +302,7 @@
 				C36FC61B27970CE700F52638 /* ViewConstants.swift in Sources */,
 				C351EEBD2790A0920018E442 /* LionView.swift in Sources */,
 				C36FC61D27970F1C00F52638 /* WeAreView.swift in Sources */,
-				C351EEBF2790A28F0018E442 /* CheeringTextView.swift in Sources */,
+				C36FC62927988DEC00F52638 /* CheeringView.swift in Sources */,
 				C351EEC12790AB7C0018E442 /* CheerButton.swift in Sources */,
 				C351EE9327906E1C0018E442 /* WeAreApp.swift in Sources */,
 				C36FC62727987BFC00F52638 /* CheerModel.swift in Sources */,
