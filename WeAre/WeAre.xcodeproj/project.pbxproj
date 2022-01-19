@@ -17,9 +17,8 @@
 		C351EEC12790AB7C0018E442 /* CheerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEC02790AB7C0018E442 /* CheerButton.swift */; };
 		C36FC61B27970CE700F52638 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC61A27970CE700F52638 /* ViewConstants.swift */; };
 		C36FC61D27970F1C00F52638 /* WeAreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EE9427906E1C0018E442 /* WeAreView.swift */; };
-		C36FC62527987B1200F52638 /* CheerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62427987B1200F52638 /* CheerManager.swift */; };
-		C36FC62727987BFC00F52638 /* CheerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62627987BFC00F52638 /* CheerModel.swift */; };
 		C36FC62927988DEC00F52638 /* CheeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62827988DEC00F52638 /* CheeringView.swift */; };
+		C36FC62D2798949400F52638 /* CheerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62C2798949400F52638 /* CheerConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +52,8 @@
 		C351EEBC2790A0920018E442 /* LionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionView.swift; sourceTree = "<group>"; };
 		C351EEC02790AB7C0018E442 /* CheerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerButton.swift; sourceTree = "<group>"; };
 		C36FC61A27970CE700F52638 /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
-		C36FC62427987B1200F52638 /* CheerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerManager.swift; sourceTree = "<group>"; };
-		C36FC62627987BFC00F52638 /* CheerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerModel.swift; sourceTree = "<group>"; };
 		C36FC62827988DEC00F52638 /* CheeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeringView.swift; sourceTree = "<group>"; };
+		C36FC62C2798949400F52638 /* CheerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +104,8 @@
 		C351EE9127906E1C0018E442 /* WeAre */ = {
 			isa = PBXGroup;
 			children = (
-				C36FC61F279718E200F52638 /* ViewModel */,
-				C36FC61E279718D600F52638 /* Model */,
+				C36FC62B2798943300F52638 /* ViewModel */,
+				C36FC62A2798942900F52638 /* Model */,
 				C36FC61C27970D6B00F52638 /* View */,
 				C351EE9227906E1C0018E442 /* WeAreApp.swift */,
 				C351EE9627906E210018E442 /* Assets.xcassets */,
@@ -153,18 +151,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C36FC61E279718D600F52638 /* Model */ = {
+		C36FC62A2798942900F52638 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C36FC62627987BFC00F52638 /* CheerModel.swift */,
+				C36FC62C2798949400F52638 /* CheerConstants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C36FC61F279718E200F52638 /* ViewModel */ = {
+		C36FC62B2798943300F52638 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C36FC62427987B1200F52638 /* CheerManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -303,10 +300,9 @@
 				C351EEBD2790A0920018E442 /* LionView.swift in Sources */,
 				C36FC61D27970F1C00F52638 /* WeAreView.swift in Sources */,
 				C36FC62927988DEC00F52638 /* CheeringView.swift in Sources */,
+				C36FC62D2798949400F52638 /* CheerConstants.swift in Sources */,
 				C351EEC12790AB7C0018E442 /* CheerButton.swift in Sources */,
 				C351EE9327906E1C0018E442 /* WeAreApp.swift in Sources */,
-				C36FC62727987BFC00F52638 /* CheerModel.swift in Sources */,
-				C36FC62527987B1200F52638 /* CheerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

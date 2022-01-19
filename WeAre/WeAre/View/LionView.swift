@@ -13,9 +13,3 @@ struct LionView: View {
         Image(imageName)
     }
 }
-
-//struct LionView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LionView(imageName: "Mascot1")
-//    }
-//}

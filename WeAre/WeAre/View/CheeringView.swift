@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct CheeringView: View {
-    @EnvironmentObject var cheerManager : CheerManager
+    var cheer1Text = "We are"
+    var cheer2Text = "penn State"
     var body: some View {
         VStack{
-            CheeringTextView(cheerText: cheerManager.cheerModel.cheer1, isVisible: cheerManager.cheer1Visible)
-            CheeringTextView(cheerText: cheerManager.cheerModel.cheer2,
-                isVisible: cheerManager.cheer2Visible)
+            CheeringTextView(cheerText: cheer1Text, isVisible: true)
+            CheeringTextView(cheerText: cheer2Text,
+                isVisible: true)
         }
     }
 }
@@ -38,6 +39,5 @@ struct CheeringTextView : View {
 struct CheeringView_Previews: PreviewProvider {
     static var previews: some View {
         CheeringView()
-            .environmentObject(CheerManager())
     }
 }

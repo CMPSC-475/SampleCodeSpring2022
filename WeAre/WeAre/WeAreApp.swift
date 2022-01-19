@@ -9,11 +9,9 @@ import SwiftUI
 
 @main
 struct WeAreApp: App {
-    @StateObject var cheerManager = CheerManager()
     var body: some Scene {
         WindowGroup {
             WeAreView()
-                .environmentObject(cheerManager)
         }
     }
 }
