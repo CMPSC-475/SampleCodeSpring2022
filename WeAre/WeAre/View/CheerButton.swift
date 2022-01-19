@@ -9,11 +9,13 @@ import SwiftUI
 
 struct CheerButton: View {
     var cheerButtonText : String
+    var action : () -> Void
     var body: some View {
-        Button(action: {}){
+        
+        Button(action: action){
             Text(cheerButtonText)
                 .bold()
-                .font(Font.system(size: 25))
+                .font(.system(size: ViewConstants.buttonFontSize))
                 .padding()
                 .background(Capsule()
                                 .strokeBorder(Color.blue, lineWidth: 50)
@@ -27,6 +29,6 @@ struct CheerButton: View {
 
 struct CheerButton_Previews: PreviewProvider {
     static var previews: some View {
-        CheerButton(cheerButtonText: "Cheer")
+        CheerButton(cheerButtonText: "Cheer"){}
     }
 }

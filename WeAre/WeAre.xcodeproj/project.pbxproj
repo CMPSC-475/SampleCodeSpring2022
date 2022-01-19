@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		C351EE9327906E1C0018E442 /* WeAreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EE9227906E1C0018E442 /* WeAreApp.swift */; };
-		C351EE9527906E1C0018E442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EE9427906E1C0018E442 /* ContentView.swift */; };
 		C351EE9727906E210018E442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C351EE9627906E210018E442 /* Assets.xcassets */; };
 		C351EE9A27906E210018E442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C351EE9927906E210018E442 /* Preview Assets.xcassets */; };
 		C351EEA427906E220018E442 /* WeAreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEA327906E220018E442 /* WeAreTests.swift */; };
 		C351EEAE27906E220018E442 /* WeAreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEAD27906E220018E442 /* WeAreUITests.swift */; };
 		C351EEB027906E220018E442 /* WeAreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEAF27906E220018E442 /* WeAreUITestsLaunchTests.swift */; };
 		C351EEBD2790A0920018E442 /* LionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEBC2790A0920018E442 /* LionView.swift */; };
-		C351EEBF2790A28F0018E442 /* CheeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEBE2790A28F0018E442 /* CheeringView.swift */; };
+		C351EEBF2790A28F0018E442 /* CheeringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEBE2790A28F0018E442 /* CheeringTextView.swift */; };
 		C351EEC12790AB7C0018E442 /* CheerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EEC02790AB7C0018E442 /* CheerButton.swift */; };
+		C36FC61B27970CE700F52638 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC61A27970CE700F52638 /* ViewConstants.swift */; };
+		C36FC61D27970F1C00F52638 /* WeAreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351EE9427906E1C0018E442 /* WeAreView.swift */; };
+		C36FC62527987B1200F52638 /* CheerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62427987B1200F52638 /* CheerManager.swift */; };
+		C36FC62727987BFC00F52638 /* CheerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FC62627987BFC00F52638 /* CheerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 /* Begin PBXFileReference section */
 		C351EE8F27906E1C0018E442 /* WeAre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeAre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C351EE9227906E1C0018E442 /* WeAreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAreApp.swift; sourceTree = "<group>"; };
-		C351EE9427906E1C0018E442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C351EE9427906E1C0018E442 /* WeAreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAreView.swift; sourceTree = "<group>"; };
 		C351EE9627906E210018E442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C351EE9927906E210018E442 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C351EE9F27906E220018E442 /* WeAreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeAreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,8 +51,11 @@
 		C351EEAD27906E220018E442 /* WeAreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAreUITests.swift; sourceTree = "<group>"; };
 		C351EEAF27906E220018E442 /* WeAreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAreUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C351EEBC2790A0920018E442 /* LionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionView.swift; sourceTree = "<group>"; };
-		C351EEBE2790A28F0018E442 /* CheeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeringView.swift; sourceTree = "<group>"; };
+		C351EEBE2790A28F0018E442 /* CheeringTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeringTextView.swift; sourceTree = "<group>"; };
 		C351EEC02790AB7C0018E442 /* CheerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerButton.swift; sourceTree = "<group>"; };
+		C36FC61A27970CE700F52638 /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
+		C36FC62427987B1200F52638 /* CheerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerManager.swift; sourceTree = "<group>"; };
+		C36FC62627987BFC00F52638 /* CheerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +106,10 @@
 		C351EE9127906E1C0018E442 /* WeAre */ = {
 			isa = PBXGroup;
 			children = (
+				C36FC61F279718E200F52638 /* ViewModel */,
+				C36FC61E279718D600F52638 /* Model */,
+				C36FC61C27970D6B00F52638 /* View */,
 				C351EE9227906E1C0018E442 /* WeAreApp.swift */,
-				C351EE9427906E1C0018E442 /* ContentView.swift */,
-				C351EEBE2790A28F0018E442 /* CheeringView.swift */,
-				C351EEBC2790A0920018E442 /* LionView.swift */,
-				C351EEC02790AB7C0018E442 /* CheerButton.swift */,
 				C351EE9627906E210018E442 /* Assets.xcassets */,
 				C351EE9827906E210018E442 /* Preview Content */,
 			);
@@ -134,6 +139,34 @@
 				C351EEAF27906E220018E442 /* WeAreUITestsLaunchTests.swift */,
 			);
 			path = WeAreUITests;
+			sourceTree = "<group>";
+		};
+		C36FC61C27970D6B00F52638 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C351EE9427906E1C0018E442 /* WeAreView.swift */,
+				C351EEBE2790A28F0018E442 /* CheeringTextView.swift */,
+				C351EEBC2790A0920018E442 /* LionView.swift */,
+				C351EEC02790AB7C0018E442 /* CheerButton.swift */,
+				C36FC61A27970CE700F52638 /* ViewConstants.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C36FC61E279718D600F52638 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C36FC62627987BFC00F52638 /* CheerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C36FC61F279718E200F52638 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C36FC62427987B1200F52638 /* CheerManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,11 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36FC61B27970CE700F52638 /* ViewConstants.swift in Sources */,
 				C351EEBD2790A0920018E442 /* LionView.swift in Sources */,
-				C351EEBF2790A28F0018E442 /* CheeringView.swift in Sources */,
-				C351EE9527906E1C0018E442 /* ContentView.swift in Sources */,
+				C36FC61D27970F1C00F52638 /* WeAreView.swift in Sources */,
+				C351EEBF2790A28F0018E442 /* CheeringTextView.swift in Sources */,
 				C351EEC12790AB7C0018E442 /* CheerButton.swift in Sources */,
 				C351EE9327906E1C0018E442 /* WeAreApp.swift in Sources */,
+				C36FC62727987BFC00F52638 /* CheerModel.swift in Sources */,
+				C36FC62527987B1200F52638 /* CheerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

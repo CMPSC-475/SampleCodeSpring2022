@@ -11,7 +11,8 @@ import SwiftUI
 struct WeAreApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeAreView()
+                .environmentObject(CheerManager())
         }
     }
 }

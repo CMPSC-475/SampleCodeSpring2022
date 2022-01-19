@@ -7,27 +7,28 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var imageName : String = "Mascot"
-    var cheerText : String = "We Are"
+struct WeAreView: View {
+    @EnvironmentObject var cheerManager : CheerManager
     var body: some View {
         ZStack{
-            Color.orange
+            background
             VStack{
                 Spacer()
                 LionView(imageName: imageName)
                 Spacer()
-                CheeringView(cheerText: cheerText)
-                CheerButton(cheerButtonText: "Cheer")
+                CheeringTextView(cheerText: cheerText1)
+                CheeringTextView(cheerText: cheerText2)
+                CheerButton(cheerButtonText: "Cheer"){}
                 Spacer()
             }
         }
-        .ignoresSafeArea()
     }
+    
+    let background : some View = Color.orange.ignoresSafeArea()
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(imageName: "Mascot", cheerText: "We Are")
+        ContentView(imageName: "Mascot")
     }
 }
