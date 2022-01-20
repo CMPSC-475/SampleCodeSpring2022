@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct WeAreView: View {
-    var imageName : String = "Mascot"
+    @EnvironmentObject var cheerManager : CheerManager
     var body: some View {
         ZStack{
             background
             VStack{
                 Spacer()
-                LionView(imageName: "Mascot")
+                LionView(imageName: cheerManager.cheerModel.mascotImageName)
                 Spacer()
                 CheeringView()
                 Spacer()
-                CheerButton(cheerButtonText: "Cheer"){}
+                CheerButton(cheerButtonText: "Cheer"){cheerManager.doCheer()}
                 Spacer()
             }
         }
