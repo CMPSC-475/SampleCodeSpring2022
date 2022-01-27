@@ -55,13 +55,13 @@ class MemoryManager :ObservableObject {
         return memoryModel.sequence.count
     }
     
-
-    
-    // scale factor for sequence pieces - enlarge current guess
-    func scaleForPieceAt(index i:Int) -> CGFloat {
-        //TODO: Complete this
-        1
-    }
+    //TODO: 
+//    private var currentGuessIndex : Int {memoryModel.currentGuessIndex-1}
+//    // scale factor for sequence pieces - enlarge current guess
+//    func scaleForPieceAt(index i:Int) -> CGFloat {
+//        //TODO: Complete this
+//        1
+//    }
     
     //MARK: - Intents -
     // Intent for control button
