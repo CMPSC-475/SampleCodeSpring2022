@@ -8,6 +8,7 @@
 import Foundation
 
 struct MemoryModel {
+    
     var sequence : [Int] = []
     var currentGuessIndex = 0
     var preferences = Preferences.standard
@@ -18,53 +19,52 @@ struct MemoryModel {
     
     var gameState : GameState = .notPlaying
     
-    mutating func newGame(){
+    
+    //MARK: - Business Logic -
+    
+    mutating func newGame() {
+        
         sequence.removeAll()
         gameState = .memorizing
         currentGuessIndex = 0
-        
-        for _ in (0..<preferences.sequenceLength){
+
+        for _ in (0..<preferences.sequenceLength) {
             let randomIndex = Int.random(in: 0..<GameConstants.numberOfChoices)
             sequence.append(randomIndex)
         }
     }
     
-    mutating func incrementGuessIndex(){
+    mutating func incrementGuessIndex() {
         self.currentGuessIndex += 1
     }
     
-    mutating func checkGuess(guess:Int){
+    mutating func checkGuess(guess:Int) {
         let isCorrect = (guess == sequence[currentGuessIndex])
-        let isDone    = (currentGuessIndex == sequence.count - 1)
+        let isDone = (currentGuessIndex == sequence.count-1)
         
-        if isCorrect{
-            if isDone{
+        if isCorrect {
+            if isDone {
                 gameState = .won
             } else {
                 incrementGuessIndex()
             }
-            
-        }else {
+        } else {
             gameState = .lost
+            
         }
-    
     }
     
     mutating func advanceGameState() {
         switch gameState {
+        case .lost, .won:
+            gameState = .memorizing
         case .notPlaying:
             gameState = .memorizing
         case .memorizing:
             gameState = .guessing
-        case .lost, .won:
-            gameState = .memorizing
         default:
-                assert(false, "Button should be disabled while guessing")
+            assert(false, "Button should be disabled while guessing")
         }
-        
     }
-    
-    
-    
     
 }

@@ -12,65 +12,88 @@ class MemoryManager :ObservableObject {
     @Published var memoryModel = MemoryModel()
     
     //MARK: - Computed Properties -
-    //TODO: Compute values for these variables
-    var shouldDisableGuessButton : Bool {true} //TODO
-    var shouldDisablePlayButton : Bool {true}  //TODO
-    var shouldDisplayMemorizeText : Bool {true}//TODO
+    var shouldDisableGuessButton : Bool {memoryModel.gameState != .guessing}
+    var shouldDisablePlayButton : Bool {memoryModel.gameState == .guessing}
+    var shouldDisplayMemorizeText : Bool {memoryModel.gameState == .memorizing}
     
 
-    private var currentGuessIndex : Int {memoryModel.currentGuessIndex-1}
     
     var background : Color {
-        //TODO: Determine what the background color should be given the state
-        return Color.darkYellow
+        switch memoryModel.gameState {
+        case .notPlaying:
+            return ViewConstants.notPlayingBackgroundColor
+        case .memorizing:
+            return ViewConstants.memorizingBackgroundColor
+        case .guessing:
+            return ViewConstants.guessingBackgroundColor
+        case .lost:
+            return ViewConstants.lostBackgroundColor
+        case .won:
+            return ViewConstants.wonBackgroundColor
+        }
     }
     
     var mainButtonTitle : String {
-        //TODO: Determine what text to show in the control button
-        return "??"
+        switch memoryModel.gameState {
+        case .notPlaying:
+            return "Play"
+        case .lost, .won:
+            return "Reset"
+        case .memorizing:
+            return "Start"
+        case .guessing:
+            return "--"
+
+        }
     }
     
 
     
     var gameSequence : [GamePiece] {
-        //TODO: how do the peices should be represented in the game?
-        return [GamePiece(background: Color.blue, title: " ")]
+        memoryModel.sequence.map {i in currentTheme[i]}
     }
     private var currentTheme : Theme {
-        //TODO: what is the current theme that the user selected
-        return Themes.colors
+        Themes.themes[memoryModel.preferences.themeIndex]
     }
     
     
     //MARK: - View Customization -
     // What game piece to display for button with index i
     func gamePieceFor(index i: Int) -> GamePiece {
-        //TODO: return peice of the selected theme
-        Themes.colors[i]
+        currentTheme[i]
     }
     
     // how many dots are shown?  All of them if we're showing the user the initial sequence or if all guessed correctly.  Otherwise only ones they've guessed correctly so far
+    //TODO: Complete this
     var visibleSequenceCount : Int  {
-        //TODO: Complete this
-        return memoryModel.sequence.count
+        switch memoryModel.gameState {
+        case .guessing:
+            return memoryModel.currentGuessIndex
+        case .memorizing, .won, .lost:
+            return memoryModel.sequence.count
+        default:
+            return 0
+        }
+        
     }
     
-    //TODO: 
-//    private var currentGuessIndex : Int {memoryModel.currentGuessIndex-1}
-//    // scale factor for sequence pieces - enlarge current guess
-//    func scaleForPieceAt(index i:Int) -> CGFloat {
-//        //TODO: Complete this
-//        1
-//    }
+    private var currentGuessIndex : Int {memoryModel.currentGuessIndex-1}
+    // scale factor for sequence pieces - enlarge current guess
+    func scaleForPieceAt(index i:Int) -> CGFloat {
+        //TODO: Complete this
+        1
+    }
     
     //MARK: - Intents -
-    // Intent for control button
     func advanceGameState() {
-        //TODO: Complete this
+        memoryModel.advanceGameState()
+        if memoryModel.gameState == .memorizing {
+            memoryModel.newGame()
+        }
     }
     
-    // Intent for game buttons
     func nextGuess(guess i:Int) {
-        //TODO: check if guess i is correct
+        memoryModel.checkGuess(guess: i)
+        
     }
 }

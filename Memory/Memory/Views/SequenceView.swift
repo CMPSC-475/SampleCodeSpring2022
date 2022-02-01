@@ -17,13 +17,19 @@ struct SequenceView: View {
     var body: some View {
         VStack {
             HStack{
-                //TODO: create a sequence of pieces
-                Text("Sequence Here")
+                ForEach(memoryManager.gameSequence.indices, id:\.self) { i in
+                    let gamePiece = memoryManager.gameSequence[i]
+                    GamePieceView(gamePiece: gamePiece, fontSize: labelFontSize)
+        
+                        .frame(width: self.width, height: self.width, alignment: .center)
+                        .opacity(i < memoryManager.visibleSequenceCount ? 1 : 0)
+                        //TODO: scale up current one
+                    
+                }
             }
             Text("Memorize This Sequence")
                 .font(.title3)
-                //TODO: Customize visibility of this text
-        }
+                .opacity(memoryManager.shouldDisplayMemorizeText ? 1.0 : 0.0)        }
     }
 }
 

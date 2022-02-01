@@ -15,7 +15,9 @@ struct MemoryView: View {
     var body: some View {
         
         ZStack {
-            //TODO: add a background that can change in color
+            Rectangle()
+                .fill(memoryManager.background)
+                .ignoresSafeArea()
             VStack {
                 HStack {
                     GuessButtonView( index:0)
@@ -29,13 +31,18 @@ struct MemoryView: View {
                 SequenceView()
                 MainButtonView()
                 
-                //TODO: add the preference button view
+                HStack {
+                    Spacer()
+                    PreferenceButtonView(showPreferences: $showPreferences)
+                }
                 
                 
             }
             .padding()
             .environmentObject(memoryManager)
-            //TODO: show sheet when going to prefrence
+            .sheet(isPresented: $showPreferences, content: {
+                PreferencesView(preferences: $memoryManager.memoryModel.preferences, showPreferences: $showPreferences)
+            })
         }
         
     }

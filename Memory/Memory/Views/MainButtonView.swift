@@ -15,17 +15,16 @@ struct MainButtonView: View {
     
     var body : some View {
         //TODO: add button action
-        Button(action: {/* action */}) {
+        Button(action: {memoryViewModel.advanceGameState()}) {
             ZStack {
                 Circle()
                     .scale(circleScaleFactor)
                     .fill(Color.black)
-                //TODO: Add custom text from view model
-                Text("??").font(.system(size: self.buttonTextSize))
+                Text(memoryViewModel.mainButtonTitle).font(.system(size: self.buttonTextSize))
                     .foregroundColor(.white)
             }
         }
-        //TODO: disable this button as needed
+        .disabled(memoryViewModel.shouldDisablePlayButton)
     }
 }
 

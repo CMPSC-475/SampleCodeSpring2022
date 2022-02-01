@@ -14,15 +14,13 @@ struct GuessButtonView : View {
     let labelFontSize : CGFloat = 100
     
     var body: some View {
-        let gamePiece = GamePiece(background: .red, title: "A")
-        //TODO: get game piece from view model
+        let gamePiece = memoryViewModel.gamePieceFor(index: index)
         
-        //TODO: fill out the action of the button
-        return Button(action: {/* action */}) {
+        return Button(action: {memoryViewModel.nextGuess(guess: index)}) {
             GamePieceView(gamePiece: gamePiece, fontSize: labelFontSize)
                 
         }
-        //TODO: disable guess button when needed
+        .disabled(memoryViewModel.shouldDisableGuessButton)
     }
     
 

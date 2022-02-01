@@ -19,11 +19,11 @@
 		3B7075FA26E66EE4009F4E09 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7075F126E66EE4009F4E09 /* ViewConstants.swift */; };
 		3B7075FB26E66EE4009F4E09 /* PreferenceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7075F226E66EE4009F4E09 /* PreferenceButtonView.swift */; };
 		3B7075FD26E66F25009F4E09 /* MemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7075FC26E66F25009F4E09 /* MemoryManager.swift */; };
+		3B7075FF26E66F3B009F4E09 /* MemoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7075FE26E66F3B009F4E09 /* MemoryModel.swift */; };
 		3B70760126E6706C009F4E09 /* GamePiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70760026E6706C009F4E09 /* GamePiece.swift */; };
 		3B70760326E67179009F4E09 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70760226E67179009F4E09 /* Preferences.swift */; };
 		3B70760526E67194009F4E09 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70760426E67194009F4E09 /* GameConstants.swift */; };
 		3B70760726E671AC009F4E09 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70760626E671AC009F4E09 /* Themes.swift */; };
-		C3A1D29827A332BF00389AA0 /* MemoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1D29727A332BF00389AA0 /* MemoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +41,11 @@
 		3B7075F126E66EE4009F4E09 /* ViewConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		3B7075F226E66EE4009F4E09 /* PreferenceButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceButtonView.swift; sourceTree = "<group>"; };
 		3B7075FC26E66F25009F4E09 /* MemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemoryManager.swift; path = Memory/Views/MemoryManager.swift; sourceTree = SOURCE_ROOT; };
+		3B7075FE26E66F3B009F4E09 /* MemoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemoryModel.swift; path = "Memory/View Models/MemoryModel.swift"; sourceTree = SOURCE_ROOT; };
 		3B70760026E6706C009F4E09 /* GamePiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePiece.swift; sourceTree = "<group>"; };
 		3B70760226E67179009F4E09 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3B70760426E67194009F4E09 /* GameConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
 		3B70760626E671AC009F4E09 /* Themes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
-		C3A1D29727A332BF00389AA0 /* MemoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 		3B7075E926E66E95009F4E09 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C3A1D29727A332BF00389AA0 /* MemoryModel.swift */,
 				3B70760226E67179009F4E09 /* Preferences.swift */,
+				3B7075FE26E66F3B009F4E09 /* MemoryModel.swift */,
 				3B70760426E67194009F4E09 /* GameConstants.swift */,
 			);
 			path = Models;
@@ -203,12 +203,12 @@
 			files = (
 				3B7075F426E66EE4009F4E09 /* MemoryView.swift in Sources */,
 				3B7075FB26E66EE4009F4E09 /* PreferenceButtonView.swift in Sources */,
-				C3A1D29827A332BF00389AA0 /* MemoryModel.swift in Sources */,
 				3B7075F526E66EE4009F4E09 /* SequenceView.swift in Sources */,
 				3B7075F626E66EE4009F4E09 /* MainButtonView.swift in Sources */,
 				3B7075FA26E66EE4009F4E09 /* ViewConstants.swift in Sources */,
 				3B70760126E6706C009F4E09 /* GamePiece.swift in Sources */,
 				3B7075FD26E66F25009F4E09 /* MemoryManager.swift in Sources */,
+				3B7075FF26E66F3B009F4E09 /* MemoryModel.swift in Sources */,
 				3B70760326E67179009F4E09 /* Preferences.swift in Sources */,
 				3B7075D926E66E75009F4E09 /* MemoryApp.swift in Sources */,
 				3B3FF86D26EA71D00043A03F /* PreferencesView.swift in Sources */,
