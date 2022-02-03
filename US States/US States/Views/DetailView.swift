@@ -10,10 +10,11 @@ import SwiftUI
 
 struct DetailView: View {
     @EnvironmentObject var manager: StateManager
-    
+    @Binding var state : USState
     var body: some View {
             List {
             //TODO: add year founded, description, images, favorite button
+                Text(state.name)
             }
 
     }
@@ -22,7 +23,8 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
 
     static var previews: some View {
-        DetailView()
+        @State var stateStandard = USState.standard
+        return DetailView(state: $stateStandard)
             .environmentObject(StateManager())
     }
 }

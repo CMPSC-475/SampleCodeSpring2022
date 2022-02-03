@@ -7,12 +7,14 @@
 
 import Foundation
 
-struct USState : Codable {
-    let state : String
+struct USState : Codable, Identifiable {
+    let name : String
     let capital : String
     let info : String
     let year : Int
     let images : [String]
+    var id : String {name}
+    var visited : Bool
     
-    static let standard = USState(state: "Pennsyltucky", capital: "BoonieVille", info: "Welcome to Pennsyltucky", year: 1776, images: [])
+    static let standard = USState(name: "Pennsyltucky", capital: "BoonieVille", info: "Welcome to Pennsyltucky", year: 1776, images: [], visited: false)
 }

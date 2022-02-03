@@ -13,7 +13,29 @@ struct ListView: View {
     let numbers = [1,2,3,4,5,6,7,8]
     
     var body: some View {
-        Text("List View")
+        List {
+            Section(header: Text("Names")){
+                ForEach(names, id:\.self) {n in
+                    Text(n)
+                }
+            }
+            Section(header: Text("Numbers")){
+                ForEach(range, id:\.self) {n in
+                    Text("\(n)")
+                }
+                
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
+//        List(range, id:\.self) { n in
+//            Text("\(n)")
+//        }
     }
 }
 

@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct StateRow: View {
+    @Binding var state : USState
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            NavigationLink(destination: DetailView(state: $state), label: {
+                Text(state.name)
+            })
+            Spacer()
+            Image(systemName: state.visited ? "star.fill" : "star")
+        }
     }
 }
 
 struct StateRow_Previews: PreviewProvider {
     static var previews: some View {
-        StateRow()
+        @State var standaradState = USState.standard
+        return StateRow(state: $standaradState)
     }
 }

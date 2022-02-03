@@ -11,12 +11,19 @@ struct StateListView: View {
     @EnvironmentObject var manager : StateManager
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List{
+                ForEach($manager.stateModel.states) { $state in
+                    StateRow(state: $state)
+                }
+            }
+        }
     }
 }
 
 struct StateListView_Previews: PreviewProvider {
     static var previews: some View {
         StateListView()
+            .environmentObject(StateManager())
     }
 }
