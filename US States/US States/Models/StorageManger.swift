@@ -1,8 +1,8 @@
 //
-//  StorageManager.swift
+//  StorageManger.swift
 //  US States
 //
-//  Created by Nader Alfares on 2/1/22.
+//  Created by jjh9 on 9/14/21.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ class StorageManager {
     var states : [USState]
     let filename = "StateData"
     
-    init(){
+    init() {
         let bundle = Bundle.main
         let url = bundle.url(forResource: filename, withExtension: ".json")!
         
@@ -19,17 +19,14 @@ class StorageManager {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             states = try decoder.decode([USState].self, from: data)
+
         } catch {
             print(error)
             states = []
         }
-        
     }
     
 }
-
-
-
 
 /*
  } catch let DecodingError.dataCorrupted(context) {
