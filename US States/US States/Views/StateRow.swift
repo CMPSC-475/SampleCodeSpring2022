@@ -9,12 +9,15 @@ import SwiftUI
 
 struct StateRow: View {
     @Binding var state : USState
+    let height : CGFloat = 60.0
     var body: some View {
         HStack{
-            NavigationLink(destination: DetailView(state: $state), label: {
-                Text(state.name)
-            })
+            Text(state.name)
             Spacer()
+            Image(state.name)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: height)
             Image(systemName: state.visited ? "star.fill" : "star")
         }
     }

@@ -12,10 +12,21 @@ struct DetailView: View {
     @EnvironmentObject var manager: StateManager
     @Binding var state : USState
     var body: some View {
-            List {
-            //TODO: add year founded, description, images, favorite button
-                Text(state.name)
+        List {
+            HStack {
+                Text("Visited")
+                Spacer()
+                Button(action: {state.visited.toggle()}, label: {
+                    Image(systemName: state.visited ? "star.fill" : "star")
+                })
             }
+            Image(state.name)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Text(state.info)
+        }
+        .navigationTitle(state.name)
+        .navigationBarTitleDisplayMode(.inline)
 
     }
 }

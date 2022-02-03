@@ -14,7 +14,18 @@ struct StateListView: View {
         NavigationView{
             List{
                 ForEach($manager.stateModel.states) { $state in
-                    StateRow(state: $state)
+                    NavigationLink(destination: DetailView(state: $state), label: {
+                        StateRow(state: $state)
+                    })
+
+                }
+            }
+            .navigationTitle("US States")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {/* TODO: add an action */}, label: {
+                        Image(systemName: "highlighter")
+                    })
                 }
             }
         }
