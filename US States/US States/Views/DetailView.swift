@@ -9,17 +9,13 @@
 import SwiftUI
 
 struct DetailView: View {
-    @EnvironmentObject var manager: StateManager
     @Binding var state : USState
+    
     var body: some View {
         List {
-            HStack {
-                Text("Visited")
-                Spacer()
-                Button(action: {state.visited.toggle()}, label: {
-                    Image(systemName: state.visited ? "star.fill" : "star")
-                })
-            }
+            FeatureView(title: "Visited", feature: $state.visited, symbol: Symbols.visitedSymbol, color: Symbols.visitedColor)
+            FeatureView(title: "Favorite", feature: $state.favorite, symbol: Symbols.favoriteSymbol, color: Symbols.favoriteColor)
+            
             Image(state.name)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -27,16 +23,16 @@ struct DetailView: View {
         }
         .navigationTitle(state.name)
         .navigationBarTitleDisplayMode(.inline)
-
+        
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
-
+    
     static var previews: some View {
-        @State var stateStandard = USState.standard
-        return DetailView(state: $stateStandard)
-            .environmentObject(StateManager())
+        DetailView(state: .constant(USState.standard))
+
     }
 }
+
 

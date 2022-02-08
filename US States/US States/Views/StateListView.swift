@@ -9,15 +9,12 @@ import SwiftUI
 
 struct StateListView: View {
     @EnvironmentObject var manager : StateManager
-    
     var body: some View {
-        NavigationView{
-            List{
-                ForEach($manager.stateModel.states) { $state in
-                    NavigationLink(destination: DetailView(state: $state), label: {
-                        StateRow(state: $state)
-                    })
-
+            List {
+                ForEach(manager.stateModel.states.indices, id:\.self) {i in
+                    NavigationLink(destination: DetailView(state: $manager.stateModel.states[i])) {
+                    StateRow(state: manager.stateModel.states[i])
+                    }
                 }
             }
             .navigationTitle("US States")
@@ -28,7 +25,6 @@ struct StateListView: View {
                     })
                 }
             }
-        }
     }
 }
 

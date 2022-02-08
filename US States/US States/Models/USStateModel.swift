@@ -14,5 +14,6 @@ struct StateModel {
     init() {
         manager = StorageManager()
         states = manager.states
+        
     }
 }
