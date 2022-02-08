@@ -13,7 +13,8 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: StateListView()) {
+                //TODO: Add Home state infor if selected
+                NavigationLink(destination: StateListView(showPreferences: $showPreferences)) {
                     Text("All States")
                 }
             }

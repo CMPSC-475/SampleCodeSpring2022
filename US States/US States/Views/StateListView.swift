@@ -9,19 +9,29 @@ import SwiftUI
 
 struct StateListView: View {
     @EnvironmentObject var manager : StateManager
+    @AppStorage(Storage.sectioning) var sectioning : Sectioning = .none
+    @Binding var showPreferences : Bool
+    var sectionInfos : [SectionInfo] { manager.sectionInfo(for: sectioning)}
     var body: some View {
             List {
-                ForEach(manager.stateModel.states.indices, id:\.self) {i in
-                    NavigationLink(destination: DetailView(state: $manager.stateModel.states[i])) {
-                    StateRow(state: manager.stateModel.states[i])
+                if sectioning == .none {
+                    SectionView(indices: manager.allIndicies)
+                } else {
+                    ForEach(sectionInfos) { sectionInfo in
+                        Section(header: CustomHeader(text: sectionInfo.title)) {
+                            SectionView(indices: sectionInfo.indicies)
+                        }
                     }
                 }
             }
             .navigationTitle("US States")
+            .sheet(isPresented: $showPreferences) {
+                PreferenceView(showingPreferences: $showPreferences)
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {/* TODO: add an action */}, label: {
-                        Image(systemName: "highlighter")
+                    Button(action: {showPreferences.toggle()}, label: {
+                        Image(systemName: "slider.horizontal.3")
                     })
                 }
             }
@@ -30,7 +40,7 @@ struct StateListView: View {
 
 struct StateListView_Previews: PreviewProvider {
     static var previews: some View {
-        StateListView()
+        StateListView(showPreferences: .constant(false))
             .environmentObject(StateManager())
     }
 }

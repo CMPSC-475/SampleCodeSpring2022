@@ -11,17 +11,22 @@ struct PreferenceView: View {
     @EnvironmentObject var manager : StateManager
     @Binding var showingPreferences : Bool
     //TODO: sectioning
+    @AppStorage(Storage.sectioning) var sectioning : Sectioning = .none
     
     var body: some View {
         NavigationView {
             Form {
                 
-                Section(header: Text("Choose Home State")) {
-                    //TODO: user can pick a state
-                }
+//                Section(header: Text("Choose Home State")) {
+//                    //TODO: user can pick a state
+//                }
                 
                 Section(header: Text("List Sections")) {
-                    //TODO: user can pick type of sectioning
+                    Picker("Choose Sectioning", selection: $sectioning) {
+                        ForEach(Sectioning.allCases, id:\.self) {section in
+                            Text(section.rawValue)
+                        }
+                    }
                 }
 
             }

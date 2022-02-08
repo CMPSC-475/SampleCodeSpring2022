@@ -27,6 +27,7 @@
 		3BCE736C26F77CA9002D27AD /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE736B26F77CA9002D27AD /* PreferenceView.swift */; };
 		3BCE736E26F8C4C6002D27AD /* Sectioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE736D26F8C4C6002D27AD /* Sectioning.swift */; };
 		C3D535CB27B21CA6005FE624 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D535CA27B21CA6005FE624 /* SectionView.swift */; };
+		C3D535CD27B2FC02005FE624 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D535CC27B2FC02005FE624 /* CustomHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		3BCE736B26F77CA9002D27AD /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
 		3BCE736D26F8C4C6002D27AD /* Sectioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sectioning.swift; sourceTree = "<group>"; };
 		C3D535CA27B21CA6005FE624 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		C3D535CC27B2FC02005FE624 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				3B7F1B5E26F221500078073D /* DetailView.swift */,
 				3BCE736326F777E1002D27AD /* FeatureView.swift */,
 				C3D535CA27B21CA6005FE624 /* SectionView.swift */,
+				C3D535CC27B2FC02005FE624 /* CustomHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				3B7F1B7C26F3B17A0078073D /* StateRow.swift in Sources */,
 				3BCE736E26F8C4C6002D27AD /* Sectioning.swift in Sources */,
 				3B7F1B5D26F21ED00078073D /* USState+Decodable.swift in Sources */,
+				C3D535CD27B2FC02005FE624 /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
