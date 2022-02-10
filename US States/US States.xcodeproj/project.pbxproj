@@ -26,6 +26,7 @@
 		3BCE736626F779E1002D27AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE736526F779E1002D27AD /* Constants.swift */; };
 		3BCE736C26F77CA9002D27AD /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE736B26F77CA9002D27AD /* PreferenceView.swift */; };
 		3BCE736E26F8C4C6002D27AD /* Sectioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE736D26F8C4C6002D27AD /* Sectioning.swift */; };
+		C390B36A27B4B960000320EA /* StatesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390B36927B4B960000320EA /* StatesScrollView.swift */; };
 		C3D535CB27B21CA6005FE624 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D535CA27B21CA6005FE624 /* SectionView.swift */; };
 		C3D535CD27B2FC02005FE624 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D535CC27B2FC02005FE624 /* CustomHeader.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		3BCE736526F779E1002D27AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3BCE736B26F77CA9002D27AD /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
 		3BCE736D26F8C4C6002D27AD /* Sectioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sectioning.swift; sourceTree = "<group>"; };
+		C390B36927B4B960000320EA /* StatesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesScrollView.swift; sourceTree = "<group>"; };
 		C3D535CA27B21CA6005FE624 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		C3D535CC27B2FC02005FE624 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 				3BCE736326F777E1002D27AD /* FeatureView.swift */,
 				C3D535CA27B21CA6005FE624 /* SectionView.swift */,
 				C3D535CC27B2FC02005FE624 /* CustomHeader.swift */,
+				C390B36927B4B960000320EA /* StatesScrollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				3B3FF86F26EF7CBE0043A03F /* String+FirstLetter.swift in Sources */,
 				3B7F1B5F26F221500078073D /* DetailView.swift in Sources */,
 				3B7F1B5B26F10ED80078073D /* StorageManger.swift in Sources */,
+				C390B36A27B4B960000320EA /* StatesScrollView.swift in Sources */,
 				3B2CC8E226EE4E4100D9B74F /* StateManager.swift in Sources */,
 				3B3FF87726F0CF4A0043A03F /* StateListView.swift in Sources */,
 				C3D535CB27B21CA6005FE624 /* SectionView.swift in Sources */,

@@ -12,14 +12,20 @@ struct PreferenceView: View {
     @Binding var showingPreferences : Bool
     //TODO: sectioning
     @AppStorage(Storage.sectioning) var sectioning : Sectioning = .none
+    @AppStorage(Storage.homeStateIndex) var homeStateIndex : Int?
     
     var body: some View {
         NavigationView {
             Form {
                 
-//                Section(header: Text("Choose Home State")) {
-//                    //TODO: user can pick a state
-//                }
+                Section(header: Text("Home State")) {
+                    Picker("Choose State", selection: $homeStateIndex) {
+                        Text("None").tag(nil as Int?)
+                        ForEach(manager.stateModel.states.indices, id:\.self) {index in
+                            Text(manager.stateModel.states[index].name).tag(index as Int?)
+                        }
+                    }
+                }
                 
                 Section(header: Text("List Sections")) {
                     Picker("Choose Sectioning", selection: $sectioning) {

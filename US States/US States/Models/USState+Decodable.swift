@@ -12,9 +12,11 @@ extension USState  {
     enum CodingKeys: String, CodingKey {
     case name = "state"
     case capital
-        case info
-        case year
-        case images
+    case info
+    case year
+    case images
+    case visited
+    case favorite
     }
     
     init(from decoder: Decoder) throws {
@@ -24,7 +26,7 @@ extension USState  {
         info = try values.decode(String.self, forKey: .info)
         year = try values.decode(Int.self, forKey: .year)
         images = try values.decode([String].self, forKey: .images)
-        visited = false
-        favorite = false
+        visited = try values.decodeIfPresent(Bool.self, forKey: .visited) ?? false
+        favorite = try values.decodeIfPresent(Bool.self, forKey: .favorite) ?? false
     }
 }

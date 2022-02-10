@@ -10,7 +10,6 @@ import SwiftUI
 struct StateListView: View {
     @EnvironmentObject var manager : StateManager
     @AppStorage(Storage.sectioning) var sectioning : Sectioning = .none
-    @Binding var showPreferences : Bool
     var sectionInfos : [SectionInfo] { manager.sectionInfo(for: sectioning)}
     var body: some View {
             List {
@@ -24,23 +23,12 @@ struct StateListView: View {
                     }
                 }
             }
-            .navigationTitle("US States")
-            .sheet(isPresented: $showPreferences) {
-                PreferenceView(showingPreferences: $showPreferences)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {showPreferences.toggle()}, label: {
-                        Image(systemName: "slider.horizontal.3")
-                    })
-                }
-            }
     }
 }
 
 struct StateListView_Previews: PreviewProvider {
     static var previews: some View {
-        StateListView(showPreferences: .constant(false))
+        StateListView()
             .environmentObject(StateManager())
     }
 }

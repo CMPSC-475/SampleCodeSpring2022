@@ -12,10 +12,8 @@ struct CustomHeader: View {
     var body: some View {
         HStack {
             Text(text)
-                .font(.system(size: 35))
-            Spacer()
+                .font(.system(size: 25))
         }
-        .padding()
     }
 }
 

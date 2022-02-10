@@ -14,6 +14,9 @@ struct StateModel {
     init() {
         manager = StorageManager()
         states = manager.states
-        
+    }
+    
+    func save() {
+        manager.save(states: states)
     }
 }
