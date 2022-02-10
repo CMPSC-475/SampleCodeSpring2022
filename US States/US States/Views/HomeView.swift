@@ -38,8 +38,6 @@ struct HomeView: View {
                     }
                 }
                 
-                
-//                    StateListView(showPreferences: $showPreferences)
                 if sectioning == .none {
                     Section(header: CustomHeader(text:"All States")){
                     SectionView(indices: stateManager.allIndicies)
