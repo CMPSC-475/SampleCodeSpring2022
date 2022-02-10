@@ -11,12 +11,19 @@ struct HomeView: View {
     @EnvironmentObject var stateManager : StateManager
     @State var showPreferences : Bool = false
     @AppStorage(Storage.sectioning) var sectioning : Sectioning = .none
+    @AppStorage(Storage.homeStateIndex) var homeStateIndex : Int?
     var sectionInfos : [SectionInfo] { stateManager.sectionInfo(for: sectioning)}
     
     var body: some View {
         NavigationView {
             List {
                 //TODO: Add HomeStateView if Selected
+                if let index = homeStateIndex {
+                    Section(header: CustomHeader(text: "Home State")) {
+                        HomeStateView(state: stateManager.stateModel.states[index])
+                    }
+                }
+                
                 
                 // Show visited states
                 if stateManager.visitedStates.count > 0 {
