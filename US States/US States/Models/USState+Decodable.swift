@@ -26,7 +26,7 @@ extension USState  {
         info = try values.decode(String.self, forKey: .info)
         year = try values.decode(Int.self, forKey: .year)
         images = try values.decode([String].self, forKey: .images)
-        visited = try values.decodeIfPresent(Bool.self, forKey: .visited) ?? false
-        favorite = try values.decodeIfPresent(Bool.self, forKey: .favorite) ?? false
+        visited = false
+        favorite = false
     }
 }

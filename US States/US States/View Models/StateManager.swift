@@ -13,14 +13,8 @@ class StateManager : ObservableObject {
     //MARK - Computed Properties -
     // get the indicies for all states in the model
     var allIndicies : [Int] {Array(stateModel.states.indices)}
-    
-    var visitedStates : [USState] {
-        stateModel.states.filter({$0.visited})
-    }
-    
-    var favoriteStates : [USState] {
-        stateModel.states.filter({$0.favorite})
-    }
+    var visitedStates : [USState] {stateModel.states.filter({$0.visited})}
+    var favoriteStates : [USState] {stateModel.states.filter({$0.favorite})}
     
     func formatFor(year:Int) -> String {
         String(format: "%04d", year)

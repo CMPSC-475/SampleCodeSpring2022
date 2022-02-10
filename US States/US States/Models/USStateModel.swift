@@ -17,6 +17,6 @@ struct StateModel {
     }
     
     func save() {
-        manager.save(states: states)
+        //TODO: Persist states
     }
 }

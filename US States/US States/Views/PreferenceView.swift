@@ -10,21 +10,14 @@ import SwiftUI
 struct PreferenceView: View {
     @EnvironmentObject var manager : StateManager
     @Binding var showingPreferences : Bool
-    //TODO: sectioning
     @AppStorage(Storage.sectioning) var sectioning : Sectioning = .none
-    @AppStorage(Storage.homeStateIndex) var homeStateIndex : Int?
     
     var body: some View {
         NavigationView {
             Form {
-                
                 Section(header: Text("Home State")) {
-                    Picker("Choose State", selection: $homeStateIndex) {
-                        Text("None").tag(nil as Int?)
-                        ForEach(manager.stateModel.states.indices, id:\.self) {index in
-                            Text(manager.stateModel.states[index].name).tag(index as Int?)
-                        }
-                    }
+                    //TODO: Picker for selecting home state
+                    Text("TODO")
                 }
                 
                 Section(header: Text("List Sections")) {

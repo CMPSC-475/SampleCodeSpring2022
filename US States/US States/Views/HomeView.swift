@@ -10,34 +10,28 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var stateManager : StateManager
     @State var showPreferences : Bool = false
-    @AppStorage(Storage.homeStateIndex) var homeStateIndex : Int?
     @AppStorage(Storage.sectioning) var sectioning : Sectioning = .none
-    
     var sectionInfos : [SectionInfo] { stateManager.sectionInfo(for: sectioning)}
     
     var body: some View {
         NavigationView {
             List {
-                //TODO: How to improve this code
-                if let index = homeStateIndex {
-                    Section(header: CustomHeader(text:"Home State")) {
-                        HomeStateView(state: stateManager.stateModel.states[index])
-                    }
+                //TODO: Add HomeStateView if Selected
                 
-                }
-                
+                // Show visited states
                 if stateManager.visitedStates.count > 0 {
                     Section(header: CustomHeader(text:"Visited States")) {
                         StatesScrollView(states: stateManager.visitedStates)
                     }
                 }
-                
+                // Show favorite states
                 if stateManager.favoriteStates.count > 0 {
                     Section(header: CustomHeader(text:"Favorite States")) {
                         StatesScrollView(states: stateManager.favoriteStates)
                     }
                 }
                 
+                //show all states
                 if sectioning == .none {
                     Section(header: CustomHeader(text:"All States")){
                     SectionView(indices: stateManager.allIndicies)
