@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SpotView: View {
-    @Binding var spot : Spot?
+    var spot : Spot?
     var body: some View {
         if let spot = spot {
             Text("Hello \(spot.title ?? "Nobody")")
@@ -18,8 +18,8 @@ struct SpotView: View {
     }
 }
 
-struct SpotView_Previews: PreviewProvider {
-    static var previews: some View {
-        SpotView(spot: .constant(LocationModel().favorites[0]))
-    }
-}
+//struct SpotView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SpotView(spot: .constant(LocationModel().favorites[0]))
+//    }
+//}
