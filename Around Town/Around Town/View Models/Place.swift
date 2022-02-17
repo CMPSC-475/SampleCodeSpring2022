@@ -27,6 +27,7 @@ extension Place {
     var name : String {customName ?? placeMark.name ?? "No Name"}
     var thoroughfare : String? {self.placeMark.thoroughfare}
     var subThoroughfare : String? {self.placeMark.subThoroughfare}
+    var coordinate : CLLocationCoordinate2D {self.placeMark.coordinate}
 }
 
 
@@ -47,7 +48,6 @@ extension Place {
     }
     
     init(placeMark:MKPlacemark, category:Category?, name:String) {
-
         self.init(placeMark:placeMark, category:category)
         self.customName = name
     }

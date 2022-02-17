@@ -28,6 +28,7 @@ struct DowntownMap: View {
             }, message: {sp in
                 Text(spot?.title ?? "No Title")
             })
+            .ignoresSafeArea()
     }
     
 
