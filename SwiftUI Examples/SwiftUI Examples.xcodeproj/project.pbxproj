@@ -15,6 +15,7 @@
 		C3D5359C27AB8069005FE624 /* SwiftUI_ExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5359B27AB8069005FE624 /* SwiftUI_ExamplesUITests.swift */; };
 		C3D5359E27AB8069005FE624 /* SwiftUI_ExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5359D27AB8069005FE624 /* SwiftUI_ExamplesUITestsLaunchTests.swift */; };
 		C3D535AB27AB8160005FE624 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D535AA27AB8160005FE624 /* ListView.swift */; };
+		C3DACF4327BDF66900AC9018 /* ConfirmationDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DACF4127BDF36B00AC9018 /* ConfirmationDialogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		C3D5359B27AB8069005FE624 /* SwiftUI_ExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExamplesUITests.swift; sourceTree = "<group>"; };
 		C3D5359D27AB8069005FE624 /* SwiftUI_ExamplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExamplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3D535AA27AB8160005FE624 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C3DACF4127BDF36B00AC9018 /* ConfirmationDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				C3D5358027AB8066005FE624 /* SwiftUI_ExamplesApp.swift */,
 				C3D5358227AB8066005FE624 /* MainView.swift */,
 				C3D535AA27AB8160005FE624 /* ListView.swift */,
+				C3DACF4127BDF36B00AC9018 /* ConfirmationDialogView.swift */,
 				C3D5358427AB8069005FE624 /* Assets.xcassets */,
 				C3D5358627AB8069005FE624 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				C3D5358327AB8066005FE624 /* MainView.swift in Sources */,
 				C3D5358127AB8066005FE624 /* SwiftUI_ExamplesApp.swift in Sources */,
 				C3D535AB27AB8160005FE624 /* ListView.swift in Sources */,
+				C3DACF4327BDF66900AC9018 /* ConfirmationDialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
