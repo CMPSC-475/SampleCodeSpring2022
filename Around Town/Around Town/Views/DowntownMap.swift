@@ -11,43 +11,68 @@ import MapKit
 
 struct DowntownMap: View {
     @EnvironmentObject var manager : MapManager
-    @State var spot : Spot?
+    @State var selectedPlace : Place?
     @State var showConfirmationDialog : Bool = false
+    @State var showDetails = false
     
     var body: some View {
-        Map(coordinateRegion: $manager.region, annotationItems: manager.locationModel.favorites, annotationContent: annotationFor(spot:))
+    
+        VStack {
+            NavigationLink(destination: PlaceView(place: $selectedPlace), isActive: $showDetails,  label: {EmptyView()})
+        
+        Map(coordinateRegion: $manager.region, annotationItems: manager.places, annotationContent: menuFor(place:))
 //            .actionSheet(item: $spot) { _spot in
 //                ActionSheet(title: Text("\(_spot.title!)"), buttons: [Alert.Button.cancel()])
 //            }
-            .confirmationDialog("Select an Action", isPresented: $showConfirmationDialog, presenting: spot, actions: { _spot in
-                VStack{
-                    Button("Directions to \(_spot.title ?? "Nowhere")"){}
-                    Button("Delete", role: .destructive) {}
-                    Button("Cancel", role: .cancel) {}
-                }
-            }, message: {sp in
-                Text(spot?.title ?? "No Title")
-            })
+
+//            .confirmationDialog("Select an Action", isPresented: $showConfirmationDialog, presenting: spot, actions: { _spot in
+//                VStack{
+//                    Button("Directions to \(_spot.title ?? "Nowhere")"){}
+//                    Button("Delete", role: .destructive) {}
+//                    Button("Cancel", role: .cancel) {}
+//                }
+//            }, message: {sp in
+//                Text(spot?.title ?? "No Title")
+//            })
             .ignoresSafeArea()
+        }
     }
     
 
 }
 
 extension DowntownMap {
-    func markerFor(spot: Spot) -> some MapAnnotationProtocol {
-        MapMarker(coordinate: spot.coordinate, tint: .blue)
-    }
+//    func markerFor(spot: Spot) -> some MapAnnotationProtocol {
+//        MapMarker(coordinate: spot.coordinate, tint: .blue)
+//    }
+//
+//    func annotationFor(spot: Spot) -> some MapAnnotationProtocol {
+//        MapAnnotation(coordinate: spot.coordinate) {
+//            Button(action: {
+//                self.spot = spot
+//                self.showConfirmationDialog = true
+//            }) {
+//                Image(systemName: "mappin.circle.fill")
+//                    .scaleEffect(2.0)
+//            }
+//        }
+//    }
     
-    func annotationFor(spot: Spot) -> some MapAnnotationProtocol {
-        MapAnnotation(coordinate: spot.coordinate) {
-            Button(action: {
-                self.spot = spot
-                self.showConfirmationDialog = true
-            }) {
-                Image(systemName: "mappin.circle.fill")
-                    .scaleEffect(2.0)
-            }
+    func menuFor(place: Place) -> some MapAnnotationProtocol {
+        MapAnnotation(coordinate: place.coordinate) {
+            Image(manager.imageFor(category: place.category!))
+                .scaleEffect(1.5)
+                .contextMenu {
+                    //Text(spot.title!)
+                    Button(action: {
+                        self.selectedPlace = place
+                        self.showDetails = true
+
+                    }, label: {
+                        Label("Details", systemImage: "info")
+                    })
+                }
+            
         }
     }
     

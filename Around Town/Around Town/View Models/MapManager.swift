@@ -22,6 +22,40 @@ class MapManager : ObservableObject {
         self.locationModel = locationModel
     }
     
+    
+    //MARK: - String for Images
+    func imageFor(category: Category) -> String {
+        category.rawValue.capitalized
+    }
+    
+    @Published var selectedCategory : Category? {
+        didSet {
+            performSearch(category: selectedCategory)
+        }
+    }
+    
+    @Published var places : [Place] = []
+    //MARK: - Searching -
+    func performSearch(category: Category?) {
+        guard let category = category else {return}
+        self.places = []
+        let request = MKLocalSearch.Request()
+        request.region = region
+        request.naturalLanguageQuery = category.rawValue
+        let search = MKLocalSearch(request: request)
+        search.start { resp, error in
+            guard error == nil else {return}
+            let mapItems = resp!.mapItems
+            for item in mapItems {
+                let place = Place(mapItem: item, category: category)
+                self.places.append(place)
+            }
+        }
+
+    }
+    
+    
+    
 }
 
 // define extension here to have support for CoreLocation
