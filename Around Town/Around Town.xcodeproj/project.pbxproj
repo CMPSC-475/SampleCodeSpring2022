@@ -21,6 +21,8 @@
 		3B68491027024521008B935B /* DowntownMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68490F27024521008B935B /* DowntownMap.swift */; };
 		C32E9AE927C537A900FC0394 /* SCWalk.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C32E9AE727C537A900FC0394 /* SCWalk.gpx */; };
 		C32E9AEA27C537A900FC0394 /* W209Westgate.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C32E9AE827C537A900FC0394 /* W209Westgate.gpx */; };
+		C32E9AED27C53A6D00FC0394 /* Restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = C32E9AEB27C53A6C00FC0394 /* Restaurants.json */; };
+		C32E9AEE27C53A6D00FC0394 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32E9AEC27C53A6C00FC0394 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		3B68490F27024521008B935B /* DowntownMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DowntownMap.swift; sourceTree = "<group>"; };
 		C32E9AE727C537A900FC0394 /* SCWalk.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SCWalk.gpx; sourceTree = "<group>"; };
 		C32E9AE827C537A900FC0394 /* W209Westgate.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = W209Westgate.gpx; sourceTree = "<group>"; };
+		C32E9AEB27C53A6C00FC0394 /* Restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurants.json; sourceTree = "<group>"; };
+		C32E9AEC27C53A6C00FC0394 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 		3B6848F6270242F7008B935B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C32E9AEC27C53A6C00FC0394 /* Restaurant.swift */,
+				C32E9AEB27C53A6C00FC0394 /* Restaurants.json */,
 				3B6849032702443E008B935B /* LocationModel.swift */,
 				3B6849052702445C008B935B /* Spot.swift */,
 			);
@@ -188,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32E9AE927C537A900FC0394 /* SCWalk.gpx in Resources */,
+				C32E9AED27C53A6D00FC0394 /* Restaurants.json in Resources */,
 				3B6848EE27024291008B935B /* Preview Assets.xcassets in Resources */,
 				3B6848EB27024291008B935B /* Assets.xcassets in Resources */,
 				C32E9AEA27C537A900FC0394 /* W209Westgate.gpx in Resources */,
@@ -201,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32E9AEE27C53A6D00FC0394 /* Restaurant.swift in Sources */,
 				3B68490227024424008B935B /* MapManager.swift in Sources */,
 				3B68490A270244E4008B935B /* MainView.swift in Sources */,
 				3B6849062702445D008B935B /* Spot.swift in Sources */,
