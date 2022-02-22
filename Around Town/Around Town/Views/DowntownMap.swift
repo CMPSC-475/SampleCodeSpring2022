@@ -14,13 +14,16 @@ struct DowntownMap: View {
     @State var selectedPlace : Place?
     @State var showConfirmationDialog : Bool = false
     @State var showDetails = false
+    @State var userTrackingMode : MapUserTrackingMode = .follow
     
     var body: some View {
     
         VStack {
             NavigationLink(destination: PlaceView(place: $selectedPlace), isActive: $showDetails,  label: {EmptyView()})
         
-        Map(coordinateRegion: $manager.region, annotationItems: manager.places, annotationContent: menuFor(place:))
+        //Map(coordinateRegion: $manager.region, annotationItems: manager.places, annotationContent: menuFor(place:))
+            
+            Map(coordinateRegion: $manager.region, interactionModes: .all, showsUserLocation: manager.showsUserLocation, userTrackingMode: $userTrackingMode, annotationItems: manager.places , annotationContent: menuFor(place:) )
             .ignoresSafeArea()
         }
     }

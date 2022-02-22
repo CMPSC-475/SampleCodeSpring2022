@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32E9AF227C53BCD00FC0394 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32E9AF127C53BCD00FC0394 /* TabViewExample.swift */; };
+		C32E9AF427C53CD600FC0394 /* PictureAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32E9AF327C53CD600FC0394 /* PictureAlbumView.swift */; };
 		C3D5358127AB8066005FE624 /* SwiftUI_ExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5358027AB8066005FE624 /* SwiftUI_ExamplesApp.swift */; };
 		C3D5358327AB8066005FE624 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5358227AB8066005FE624 /* MainView.swift */; };
 		C3D5358527AB8069005FE624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D5358427AB8069005FE624 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C32E9AF127C53BCD00FC0394 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
+		C32E9AF327C53CD600FC0394 /* PictureAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureAlbumView.swift; sourceTree = "<group>"; };
 		C3D5357D27AB8066005FE624 /* SwiftUI Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D5358027AB8066005FE624 /* SwiftUI_ExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExamplesApp.swift; sourceTree = "<group>"; };
 		C3D5358227AB8066005FE624 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				C3D5358227AB8066005FE624 /* MainView.swift */,
 				C3D535AA27AB8160005FE624 /* ListView.swift */,
 				C3DACF4127BDF36B00AC9018 /* ConfirmationDialogView.swift */,
+				C32E9AF127C53BCD00FC0394 /* TabViewExample.swift */,
+				C32E9AF327C53CD600FC0394 /* PictureAlbumView.swift */,
 				C3D5358427AB8069005FE624 /* Assets.xcassets */,
 				C3D5358627AB8069005FE624 /* Preview Content */,
 			);
@@ -263,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32E9AF227C53BCD00FC0394 /* TabViewExample.swift in Sources */,
 				C3D5358327AB8066005FE624 /* MainView.swift in Sources */,
 				C3D5358127AB8066005FE624 /* SwiftUI_ExamplesApp.swift in Sources */,
+				C32E9AF427C53CD600FC0394 /* PictureAlbumView.swift in Sources */,
 				C3D535AB27AB8160005FE624 /* ListView.swift in Sources */,
 				C3DACF4327BDF66900AC9018 /* ConfirmationDialogView.swift in Sources */,
 			);

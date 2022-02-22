@@ -9,17 +9,27 @@ import Foundation
 import MapKit
 
 
-class MapManager : ObservableObject {
+
+class MapManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var locationModel : LocationModel
     @Published var region : MKCoordinateRegion
+    @Published var showsUserLocation = false
     let spanDelta = 0.01
     
-    init() {
+    let locationManager : CLLocationManager
+    
+    override init() {
         let locationModel = LocationModel()
         let center : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: locationModel.centerCoord.latitude, longitude: locationModel.centerCoord.longitude)
         let span = MKCoordinateSpan(latitudeDelta: spanDelta, longitudeDelta: spanDelta)
         region = MKCoordinateRegion(center: center, span: span)
         self.locationModel = locationModel
+        
+        locationManager = CLLocationManager()
+        super.init()
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
     }
     
     
@@ -53,6 +63,9 @@ class MapManager : ObservableObject {
         }
 
     }
+    
+    
+    
     
     
     
