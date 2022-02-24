@@ -4,7 +4,6 @@
 //
 //  Created by Hannan, John Joseph on 9/26/21.
 //
-
 import SwiftUI
 import MapKit
 
@@ -15,14 +14,16 @@ struct MainView: View {
             DowntownMap()
                 .toolbar {
                     searchBarItem
+                    titleItem
+                    diningItem
                 }
         }
     }
     
     // some local variables
-    var searchBarItem = ToolbarItem(placement: .navigationBarTrailing) {
-                            SearchButton()
-                        }
+    var searchBarItem = ToolbarItem(placement: .navigationBarTrailing) {SearchButton()}
+    var titleItem = ToolbarItem(placement: .principal) {Text("Downtown")}
+    var diningItem = ToolbarItem(placement: .navigationBarLeading) {DiningPicker()}
 }
 
 struct MainView_Previews: PreviewProvider {

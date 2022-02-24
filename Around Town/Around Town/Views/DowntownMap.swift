@@ -13,6 +13,7 @@ struct DowntownMap: View {
     @EnvironmentObject var manager : MapManager
     @State var selectedPlace : Place?
     @State var showConfirmationDialog : Bool = false
+    @State var showingPlace = false  // for showing confirmation dialog
     @State var showDetails = false
     @State var userTrackingMode : MapUserTrackingMode = .follow
     
@@ -21,20 +22,31 @@ struct DowntownMap: View {
         VStack {
             NavigationLink(destination: PlaceView(place: $selectedPlace), isActive: $showDetails,  label: {EmptyView()})
         
-        //Map(coordinateRegion: $manager.region, annotationItems: manager.places, annotationContent: menuFor(place:))
             
-            Map(coordinateRegion: $manager.region, interactionModes: .all, showsUserLocation: manager.showsUserLocation, userTrackingMode: $userTrackingMode, annotationItems: manager.places , annotationContent: menuFor(place:) )
+            Map(coordinateRegion: $manager.region, interactionModes: .all, showsUserLocation: manager.showsUserLocation, userTrackingMode: $userTrackingMode, annotationItems: manager.places , annotationContent: annotationFor(place:) )
             .ignoresSafeArea()
+            .confirmationDialog("Title",
+                                isPresented: $showingPlace,
+                                presenting: selectedPlace,
+                                actions: { thePlace in
+                VStack {
+                    Button("Directions to \(thePlace.title)") {/*TODO*/}
+                    Button("Delete", role: .destructive) {manager.delete(place: thePlace)}
+                }
+            }, message: { place in
+                Text(place.title)
+                
+            })
         }
     }
     
 
 }
 
-extension DowntownMap {    
+extension DowntownMap {
     func menuFor(place: Place) -> some MapAnnotationProtocol {
         MapAnnotation(coordinate: place.coordinate) {
-            Image(manager.imageFor(category: place.category!))
+            Image(manager.imageNameFor(category: place.category!))
                 .scaleEffect(1.5)
                 .contextMenu {
                     //Text(spot.title!)
@@ -47,6 +59,14 @@ extension DowntownMap {
                     })
                 }
             
+        }
+    }
+    
+    func annotationFor(place:Place) -> some MapAnnotationProtocol {
+        MapAnnotation(coordinate: place.coordinate)  {
+            Button(action: {showingPlace = true; self.selectedPlace = place})
+            {Image(manager.imageNameFor(category: place.category!))}
+                   
         }
     }
     

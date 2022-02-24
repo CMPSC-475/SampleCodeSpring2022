@@ -9,14 +9,13 @@ import Foundation
 import MapKit
 
 
-
 class MapManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var locationModel : LocationModel
     @Published var region : MKCoordinateRegion
     @Published var showsUserLocation = false
-    let spanDelta = 0.01
-    
     let locationManager : CLLocationManager
+    var userTrackingMode :MKUserTrackingMode = .none
+    let spanDelta = 0.01
     
     override init() {
         let locationModel = LocationModel()
@@ -32,9 +31,28 @@ class MapManager : NSObject, ObservableObject, CLLocationManagerDelegate {
         locationManager.delegate = self
     }
     
+    //MARK: - Modifying Places -
+    func delete(place:Place) {
+        // firstIndex requires Place to conform to Equatable protocol
+        if let index = places.firstIndex(of: place) {
+            places.remove(at: index)
+        }
+    }
+    
+    //MARK: - Restaurants -
+    // List of restaurant names & addresses read in from JSON file
+    let restaurants = Restaurant.restaurants
+    
+    // when user selects a restaurant we annotate map with it
+    var selectedRestaurantIndex : Int = 0
+    
+    func geocode(for restaurant: Restaurant){
+        //TODO: Complete this
+    }
+    
     
     //MARK: - String for Images
-    func imageFor(category: Category) -> String {
+    func imageNameFor(category: Category) -> String {
         category.rawValue.capitalized
     }
     
@@ -65,9 +83,9 @@ class MapManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     
-    
-    
-    
+    func provideDirections(for: Place){
+        //TODO: Complete this
+    }
     
 }
 

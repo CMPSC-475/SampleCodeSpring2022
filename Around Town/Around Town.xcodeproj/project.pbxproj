@@ -24,6 +24,7 @@
 		C32E9AED27C53A6D00FC0394 /* Restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = C32E9AEB27C53A6C00FC0394 /* Restaurants.json */; };
 		C32E9AEE27C53A6D00FC0394 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32E9AEC27C53A6C00FC0394 /* Restaurant.swift */; };
 		C32E9AF027C53AE600FC0394 /* MapManager+CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32E9AEF27C53AE600FC0394 /* MapManager+CLLocation.swift */; };
+		C3E334E027C7B77B00FE4166 /* DiningPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E334DF27C7B77B00FE4166 /* DiningPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		C32E9AEB27C53A6C00FC0394 /* Restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurants.json; sourceTree = "<group>"; };
 		C32E9AEC27C53A6C00FC0394 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		C32E9AEF27C53AE600FC0394 /* MapManager+CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapManager+CLLocation.swift"; sourceTree = "<group>"; };
+		C3E334DF27C7B77B00FE4166 /* DiningPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3B68490F27024521008B935B /* DowntownMap.swift */,
 				3B68490D2702450F008B935B /* SearchButton.swift */,
 				3B68490B270244F3008B935B /* PlaceView.swift */,
+				C3E334DF27C7B77B00FE4166 /* DiningPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				3B6849042702443E008B935B /* LocationModel.swift in Sources */,
 				3B68490027024414008B935B /* Place.swift in Sources */,
 				3B68491027024521008B935B /* DowntownMap.swift in Sources */,
+				C3E334E027C7B77B00FE4166 /* DiningPicker.swift in Sources */,
 				3B6849082702447A008B935B /* Category.swift in Sources */,
 				C32E9AF027C53AE600FC0394 /* MapManager+CLLocation.swift in Sources */,
 				3B68490C270244F3008B935B /* PlaceView.swift in Sources */,
