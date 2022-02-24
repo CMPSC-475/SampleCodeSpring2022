@@ -30,7 +30,7 @@ struct DowntownMap: View {
                                 presenting: selectedPlace,
                                 actions: { thePlace in
                 VStack {
-                    Button("Directions to \(thePlace.title)") {/*TODO*/}
+                    Button("Directions to \(thePlace.title)") {manager.provideDirections(for: thePlace)}
                     Button("Delete", role: .destructive) {manager.delete(place: thePlace)}
                 }
             }, message: { place in
@@ -39,7 +39,6 @@ struct DowntownMap: View {
             })
         }
     }
-    
 
 }
 
