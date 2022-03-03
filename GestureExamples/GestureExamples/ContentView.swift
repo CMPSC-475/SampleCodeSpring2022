@@ -26,6 +26,10 @@ struct ContentView: View {
                     Label("Pokemons", systemImage: "flame.fill")
                 }
                 
+                NavigationLink(destination: CardFlip()) {
+                    Label("Card Flip", systemImage: "box.fill")
+                }
+                
                 
             }
         }

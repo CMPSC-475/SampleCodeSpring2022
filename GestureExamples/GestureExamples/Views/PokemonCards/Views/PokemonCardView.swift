@@ -33,19 +33,41 @@ struct PokemonCardView: View {
         let drag = DragGesture()
             .onChanged {v in
                 //TODO:
+                offset = v.translation
+                angle  = Angle(degrees: v.translation.width * angleChangeFactor)
             }
             .onEnded {v in
-               //TODO:
+               dragEnded(with: v)
             }
                 
         
         return CardView(pokemon: pokemon)
+            .offset(offset)
+            .rotationEffect(angle)
+            .gesture(drag)
+            .onChange(of: pokemon.status) { value in
+                offset = computedOffset
+                if value == .unDecided {
+                    angle = Angle.zero
+                }
+            }
+            .animation(.easeInOut(duration: 0.5), value: offset)
+            .animation(.easeInOut(duration: 0.5), value: angle)
                 //TODO: add gesture
 
     }
     
     func dragEnded(with v:DragGesture.Value) {
-        //TODO:
+        if v.translation.width < -translationThreshold {
+            pokemon.status = .traded
+            manager.tradedPokemon(pokemon: pokemon)
+        } else if v.translation.width > translationThreshold {
+            pokemon.status = .kept
+            manager.keptPokemon(pokemon: pokemon)
+        } else {
+            offset = CGSize.zero
+            angle  = .zero
+        }
     }
 }
 

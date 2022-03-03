@@ -24,11 +24,39 @@ struct CardFlip: View {
     let frontDegrees : Double = 0.0
     let backDegrees : Double = -180.0
     let midDegrees : Double = -90.0
+    
+    var isShowingBack : Bool {degrees < midDegrees}
+    var imageName : String {isShowingBack ? backImageName : frontImageName}
+    var bgImageColor : Color {isShowingBack ? bgColorBack : bgColorFront}
+    var flipDegree : Double {isShowingBack ? backDegrees : frontDegrees}
 
     var body: some View {
         
-        FlipImage(name: frontImageName, color: bgColorFront)
-        .rotation3DEffect(Angle(degrees:degrees), axis: (0,1,0))
+        let swipe = DragGesture()
+            .onChanged { v in
+                let translation = Double(v.translation.width)
+                switch swiping {
+                case .right:
+                    degrees = rotationDegreesFor(translation + backDegrees)
+                case .left:
+                    degrees = rotationDegreesFor(translation)
+                }
+            }
+            .onEnded { v in
+                if isShowingBack {
+                    swiping = .right
+                    degrees = backDegrees
+                } else {
+                    swiping = .left
+                    degrees = frontDegrees
+                }
+            }
+        
+        return FlipImage(name: imageName, color: bgImageColor)
+        .rotation3DEffect(Angle(degrees: flipDegree), axis: (0,1,0))
+        .rotation3DEffect(Angle(degrees: degrees), axis: (0,1,0))
+        
+        .gesture(swipe)
 
     }
     
