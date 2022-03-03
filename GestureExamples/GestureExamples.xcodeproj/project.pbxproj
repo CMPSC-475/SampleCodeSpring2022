@@ -13,6 +13,13 @@
 		C30B696E27CDAF47006D0A1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B696D27CDAF47006D0A1B /* Preview Assets.xcassets */; };
 		C336A61F27CDCC0C00D5F686 /* MovingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336A61E27CDCC0C00D5F686 /* MovingBoxView.swift */; };
 		C336A62227CDD86F00D5F686 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336A62127CDD86F00D5F686 /* Position.swift */; };
+		C37F9C9C27D074BD00BC7DB0 /* PokemonCardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F9C9B27D074BD00BC7DB0 /* PokemonCardsManager.swift */; };
+		C37F9C9E27D0756A00BC7DB0 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = C37F9C9D27D0756A00BC7DB0 /* pokedex.json */; };
+		C37F9CA027D075B100BC7DB0 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F9C9F27D075B100BC7DB0 /* Pokemon.swift */; };
+		C37F9CA527D07A5700BC7DB0 /* PokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F9CA427D07A5700BC7DB0 /* PokemonCardView.swift */; };
+		C37F9CA727D07D2500BC7DB0 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F9CA627D07D2500BC7DB0 /* CardStackView.swift */; };
+		C37F9CAA27D09D0800BC7DB0 /* CardFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F9CA927D09D0800BC7DB0 /* CardFlip.swift */; };
+		C37F9CAC27D09D2700BC7DB0 /* FlipImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F9CAB27D09D2700BC7DB0 /* FlipImage.swift */; };
 		C3E9DE7E27CDB04600D3E452 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E9DE7D27CDB04600D3E452 /* TutorialView.swift */; };
 		C3E9DE8227CDC9D200D3E452 /* DraggableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E9DE8127CDC9D200D3E452 /* DraggableModifier.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +32,13 @@
 		C30B696D27CDAF47006D0A1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C336A61E27CDCC0C00D5F686 /* MovingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingBoxView.swift; sourceTree = "<group>"; };
 		C336A62127CDD86F00D5F686 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		C37F9C9B27D074BD00BC7DB0 /* PokemonCardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardsManager.swift; sourceTree = "<group>"; };
+		C37F9C9D27D0756A00BC7DB0 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
+		C37F9C9F27D075B100BC7DB0 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		C37F9CA427D07A5700BC7DB0 /* PokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardView.swift; sourceTree = "<group>"; };
+		C37F9CA627D07D2500BC7DB0 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		C37F9CA927D09D0800BC7DB0 /* CardFlip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFlip.swift; sourceTree = "<group>"; };
+		C37F9CAB27D09D2700BC7DB0 /* FlipImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipImage.swift; sourceTree = "<group>"; };
 		C3E9DE7D27CDB04600D3E452 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		C3E9DE8127CDC9D200D3E452 /* DraggableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,12 +93,59 @@
 		C336A62027CDCC3700D5F686 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C37F9CA827D09AED00BC7DB0 /* FlippableCard */,
+				C37F9C9A27D074A500BC7DB0 /* PokemonCards */,
 				C3E9DE7D27CDB04600D3E452 /* TutorialView.swift */,
 				C3E9DE8027CDC9B200D3E452 /* Extensions */,
 				C3E9DE8327CDCBBF00D3E452 /* MovingBox */,
 				C336A62127CDD86F00D5F686 /* Position.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C37F9C9A27D074A500BC7DB0 /* PokemonCards */ = {
+			isa = PBXGroup;
+			children = (
+				C37F9CA227D07A2600BC7DB0 /* Model */,
+				C37F9CA327D07A3800BC7DB0 /* ViewModel */,
+				C37F9CA127D07A1F00BC7DB0 /* Views */,
+			);
+			path = PokemonCards;
+			sourceTree = "<group>";
+		};
+		C37F9CA127D07A1F00BC7DB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C37F9CA427D07A5700BC7DB0 /* PokemonCardView.swift */,
+				C37F9CA627D07D2500BC7DB0 /* CardStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C37F9CA227D07A2600BC7DB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C37F9C9D27D0756A00BC7DB0 /* pokedex.json */,
+				C37F9C9F27D075B100BC7DB0 /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C37F9CA327D07A3800BC7DB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C37F9C9B27D074BD00BC7DB0 /* PokemonCardsManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C37F9CA827D09AED00BC7DB0 /* FlippableCard */ = {
+			isa = PBXGroup;
+			children = (
+				C37F9CA927D09D0800BC7DB0 /* CardFlip.swift */,
+				C37F9CAB27D09D2700BC7DB0 /* FlipImage.swift */,
+			);
+			path = FlippableCard;
 			sourceTree = "<group>";
 		};
 		C3E9DE8027CDC9B200D3E452 /* Extensions */ = {
@@ -161,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37F9C9E27D0756A00BC7DB0 /* pokedex.json in Resources */,
 				C30B696E27CDAF47006D0A1B /* Preview Assets.xcassets in Resources */,
 				C30B696B27CDAF47006D0A1B /* Assets.xcassets in Resources */,
 			);
@@ -174,11 +236,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30B696927CDAF45006D0A1B /* ContentView.swift in Sources */,
+				C37F9CA027D075B100BC7DB0 /* Pokemon.swift in Sources */,
+				C37F9CAA27D09D0800BC7DB0 /* CardFlip.swift in Sources */,
 				C30B696727CDAF45006D0A1B /* GestureExamplesApp.swift in Sources */,
 				C336A61F27CDCC0C00D5F686 /* MovingBoxView.swift in Sources */,
 				C3E9DE8227CDC9D200D3E452 /* DraggableModifier.swift in Sources */,
+				C37F9CA727D07D2500BC7DB0 /* CardStackView.swift in Sources */,
+				C37F9CA527D07A5700BC7DB0 /* PokemonCardView.swift in Sources */,
+				C37F9CAC27D09D2700BC7DB0 /* FlipImage.swift in Sources */,
 				C336A62227CDD86F00D5F686 /* Position.swift in Sources */,
 				C3E9DE7E27CDB04600D3E452 /* TutorialView.swift in Sources */,
+				C37F9C9C27D074BD00BC7DB0 /* PokemonCardsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,2600 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 0.71,
+    "weight": 6.9,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "next_evolution": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 0.99,
+    "weight": 13.0,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      1
+    ],
+    "next_evolution": [
+      3
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 2.01,
+    "weight": 100.0,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "types": [
+      "Fire"
+    ],
+    "height": 0.61,
+    "weight": 8.5,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "next_evolution": [
+      5,
+      6
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "types": [
+      "Fire"
+    ],
+    "height": 1.09,
+    "weight": 19.0,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "prev_evolution": [
+      4
+    ],
+    "next_evolution": [
+      6
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "height": 1.70,
+    "weight": 90.5,
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Rock"
+    ],
+    "prev_evolution": [
+      4,
+      5
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "types": [
+      "Water"
+    ],
+    "height": 0.51,
+    "weight": 9.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      8,
+      9
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "types": [
+      "Water"
+    ],
+    "height": 0.99,
+    "weight": 22.5,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      7
+    ],
+    "next_evolution": [
+      9
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "types": [
+      "Water"
+    ],
+    "height": 1.60,
+    "weight": 85.5,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      7,
+      8
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "types": [
+      "Bug"
+    ],
+    "height": 0.30,
+    "weight": 2.9,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "next_evolution": [
+      11,
+      12
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Metapod",
+    "types": [
+      "Bug"
+    ],
+    "height": 0.71,
+    "weight": 9.9,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "prev_evolution": [
+      10
+    ],
+    "next_evolution": [
+      12
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Butterfree",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "height": 1.09,
+    "weight": 32.0,
+    "weaknesses": [
+      "Fire",
+      "Electric",
+      "Ice",
+      "Flying",
+      "Rock"
+    ],
+    "prev_evolution": [
+      10,
+      11
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Weedle",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "height": 0.30,
+    "weight": 3.2,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "next_evolution": [
+      14,
+      15
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Kakuna",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "height": 0.61,
+    "weight": 10.0,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "prev_evolution": [
+      13
+    ],
+    "next_evolution": [
+      15
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "height": 0.99,
+    "weight": 29.5,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "prev_evolution": [
+      13,
+      14
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Pidgey",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 0.30,
+    "weight": 1.8,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "next_evolution": [
+      17,
+      18
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Pidgeotto",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 1.09,
+    "weight": 30.0,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "prev_evolution": [
+      16
+    ],
+    "next_evolution": [
+      18
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 1.50,
+    "weight": 39.5,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "prev_evolution": [
+      16,
+      17
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Rattata",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.30,
+    "weight": 3.5,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "next_evolution": [
+      20
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Raticate",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.71,
+    "weight": 18.5,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "prev_evolution": [
+      19
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Spearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 0.30,
+    "weight": 2.0,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "next_evolution": [
+      22
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Fearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 1.19,
+    "weight": 38.0,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "prev_evolution": [
+      21
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Ekans",
+    "types": [
+      "Poison"
+    ],
+    "height": 2.01,
+    "weight": 6.9,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "next_evolution": [
+      24
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Arbok",
+    "types": [
+      "Poison"
+    ],
+    "height": 3.51,
+    "weight": 65.0,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      23
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "types": [
+      "Electric"
+    ],
+    "height": 0.41,
+    "weight": 6.0,
+    "weaknesses": [
+      "Ground"
+    ],
+    "next_evolution": [
+      26
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Raichu",
+    "types": [
+      "Electric"
+    ],
+    "height": 0.79,
+    "weight": 30.0,
+    "weaknesses": [
+      "Ground"
+    ],
+    "prev_evolution": [
+      25
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Sandshrew",
+    "types": [
+      "Ground"
+    ],
+    "height": 0.61,
+    "weight": 12.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "next_evolution": [
+      28
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Sandslash",
+    "types": [
+      "Ground"
+    ],
+    "height": 0.99,
+    "weight": 29.5,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "prev_evolution": [
+      27
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Nidoran ♀",
+    "types": [
+      "Poison"
+    ],
+    "height": 0.41,
+    "weight": 7.0,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "next_evolution": [
+      30,
+      31
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Nidorina",
+    "types": [
+      "Poison"
+    ],
+    "height": 0.79,
+    "weight": 20.0,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      29
+    ],
+    "next_evolution": [
+      31
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Nidoqueen",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "height": 1.30,
+    "weight": 60.0,
+    "weaknesses": [
+      "Water",
+      "Ice",
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      29,
+      30
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Nidoran ♂",
+    "types": [
+      "Poison"
+    ],
+    "height": 0.51,
+    "weight": 9.0,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "next_evolution": [
+      33,
+      34
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Nidorino",
+    "types": [
+      "Poison"
+    ],
+    "height": 0.89,
+    "weight": 19.5,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      32
+    ],
+    "next_evolution": [
+      34
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Nidoking",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "height": 1.40,
+    "weight": 62.0,
+    "weaknesses": [
+      "Water",
+      "Ice",
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      32,
+      33
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Clefairy",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.61,
+    "weight": 7.5,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "next_evolution": [
+      36
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Clefable",
+    "types": [
+      "Normal"
+    ],
+    "height": 1.30,
+    "weight": 40.0,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "prev_evolution": [
+      35
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Vulpix",
+    "types": [
+      "Fire"
+    ],
+    "height": 0.61,
+    "weight": 9.9,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "next_evolution": [
+      38
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Ninetales",
+    "types": [
+      "Fire"
+    ],
+    "height": 1.09,
+    "weight": 19.9,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "prev_evolution": [
+      37
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Jigglypuff",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.51,
+    "weight": 5.5,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "next_evolution": [
+      40
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Wigglytuff",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.99,
+    "weight": 12.0,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "prev_evolution": [
+      39
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Zubat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "height": 0.79,
+    "weight": 7.5,
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Psychic",
+      "Rock"
+    ],
+    "next_evolution": [
+      42
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Golbat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "height": 1.60,
+    "weight": 55.0,
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Psychic",
+      "Rock"
+    ],
+    "prev_evolution": [
+      41
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Oddish",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 0.51,
+    "weight": 5.4,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "next_evolution": [
+      44,
+      45
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Gloom",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 0.79,
+    "weight": 8.6,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      43
+    ],
+    "next_evolution": [
+      45
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Vileplume",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 1.19,
+    "weight": 18.6,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      43,
+      44
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Paras",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "height": 0.30,
+    "weight": 5.4,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Rock"
+    ],
+    "next_evolution": [
+      47
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Parasect",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "height": 0.99,
+    "weight": 29.5,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Rock"
+    ],
+    "prev_evolution": [
+      46
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Venonat",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "height": 0.99,
+    "weight": 30.0,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "next_evolution": [
+      49
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Venomoth",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "height": 1.50,
+    "weight": 12.5,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "prev_evolution": [
+      48
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Diglett",
+    "types": [
+      "Ground"
+    ],
+    "height": 0.20,
+    "weight": 0.8,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "next_evolution": [
+      51
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Dugtrio",
+    "types": [
+      "Ground"
+    ],
+    "height": 0.71,
+    "weight": 33.3,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "prev_evolution": [
+      50
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Meowth",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.41,
+    "weight": 4.2,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "next_evolution": [
+      53
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Persian",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.99,
+    "weight": 32.0,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "prev_evolution": [
+      52
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "types": [
+      "Water"
+    ],
+    "height": 0.79,
+    "weight": 19.6,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      55
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Golduck",
+    "types": [
+      "Water"
+    ],
+    "height": 1.70,
+    "weight": 76.6,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      54
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Mankey",
+    "types": [
+      "Fighting"
+    ],
+    "height": 0.51,
+    "weight": 28.0,
+    "weaknesses": [
+      "Flying",
+      "Psychic"
+    ],
+    "next_evolution": [
+      57
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Primeape",
+    "types": [
+      "Fighting"
+    ],
+    "height": 0.99,
+    "weight": 32.0,
+    "weaknesses": [
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      56
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "types": [
+      "Fire"
+    ],
+    "height": 0.71,
+    "weight": 19.0,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "next_evolution": [
+      59
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Arcanine",
+    "types": [
+      "Fire"
+    ],
+    "height": 1.91,
+    "weight": 155.0,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "prev_evolution": [
+      58
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Poliwag",
+    "types": [
+      "Water"
+    ],
+    "height": 0.61,
+    "weight": 12.4,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      61,
+      62
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Poliwhirl",
+    "types": [
+      "Water"
+    ],
+    "height": 0.99,
+    "weight": 20.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      60
+    ],
+    "next_evolution": [
+      62
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Poliwrath",
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "height": 1.30,
+    "weight": 54.0,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      60,
+      61
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Abra",
+    "types": [
+      "Psychic"
+    ],
+    "height": 0.89,
+    "weight": 19.5,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ],
+    "next_evolution": [
+      64,
+      65
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Kadabra",
+    "types": [
+      "Psychic"
+    ],
+    "height": 1.30,
+    "weight": 56.5,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      63
+    ],
+    "next_evolution": [
+      65
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "height": 1.50,
+    "weight": 48.0,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      63,
+      64
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Machop",
+    "types": [
+      "Fighting"
+    ],
+    "height": 0.79,
+    "weight": 19.5,
+    "weaknesses": [
+      "Flying",
+      "Psychic"
+    ],
+    "next_evolution": [
+      67,
+      68
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Machoke",
+    "types": [
+      "Fighting"
+    ],
+    "height": 1.50,
+    "weight": 70.5,
+    "weaknesses": [
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      66
+    ],
+    "next_evolution": [
+      68
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Machamp",
+    "types": [
+      "Fighting"
+    ],
+    "height": 1.60,
+    "weight": 130.0,
+    "weaknesses": [
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      66,
+      67
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Bellsprout",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 0.71,
+    "weight": 4.0,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "next_evolution": [
+      70,
+      71
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Weepinbell",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 0.99,
+    "weight": 6.4,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      69
+    ],
+    "next_evolution": [
+      71
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": 1.70,
+    "weight": 15.5,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      69,
+      70
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Tentacool",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "height": 0.89,
+    "weight": 45.5,
+    "weaknesses": [
+      "Electric",
+      "Ground",
+      "Psychic"
+    ],
+    "next_evolution": [
+      73
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Tentacruel",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "height": 1.60,
+    "weight": 55.0,
+    "weaknesses": [
+      "Electric",
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      72
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Geodude",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "height": 0.41,
+    "weight": 20.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground"
+    ],
+    "next_evolution": [
+      75,
+      76
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Graveler",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "height": 0.99,
+    "weight": 105.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground"
+    ],
+    "prev_evolution": [
+      74
+    ],
+    "next_evolution": [
+      76
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Golem",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "height": 1.40,
+    "weight": 300.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground"
+    ],
+    "prev_evolution": [
+      74,
+      75
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Ponyta",
+    "types": [
+      "Fire"
+    ],
+    "height": 0.99,
+    "weight": 30.0,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "next_evolution": [
+      78
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Rapidash",
+    "types": [
+      "Fire"
+    ],
+    "height": 1.70,
+    "weight": 95.0,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "prev_evolution": [
+      77
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "height": 1.19,
+    "weight": 36.0,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Bug",
+      "Ghost"
+    ],
+    "next_evolution": [
+      80
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "height": 1.60,
+    "weight": 78.5,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Bug",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      79
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Magnemite",
+    "types": [
+      "Electric"
+    ],
+    "height": 0.30,
+    "weight": 6.0,
+    "weaknesses": [
+      "Fire",
+      "Water",
+      "Ground"
+    ],
+    "next_evolution": [
+      82
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Magneton",
+    "types": [
+      "Electric"
+    ],
+    "height": 0.99,
+    "weight": 60.0,
+    "weaknesses": [
+      "Fire",
+      "Water",
+      "Ground"
+    ],
+    "prev_evolution": [
+      81
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Farfetch'd",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 0.79,
+    "weight": 15.0,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Doduo",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 1.40,
+    "weight": 39.2,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "next_evolution": [
+      85
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Dodrio",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "height": 1.80,
+    "weight": 85.2,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "prev_evolution": [
+      84
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Seel",
+    "types": [
+      "Water"
+    ],
+    "height": 1.09,
+    "weight": 90.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      87
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Dewgong",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "height": 1.70,
+    "weight": 120.0,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Rock"
+    ],
+    "prev_evolution": [
+      86
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Grimer",
+    "types": [
+      "Poison"
+    ],
+    "height": 0.89,
+    "weight": 30.0,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "next_evolution": [
+      89
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Muk",
+    "types": [
+      "Poison"
+    ],
+    "height": 1.19,
+    "weight": 30.0,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      88
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Shellder",
+    "types": [
+      "Water"
+    ],
+    "height": 0.30,
+    "weight": 4.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      91
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Cloyster",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "height": 1.50,
+    "weight": 132.5,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Rock"
+    ],
+    "prev_evolution": [
+      90
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Gastly",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "height": 1.30,
+    "weight": 0.1,
+    "weaknesses": [
+      "Ground",
+      "Psychic",
+      "Ghost"
+    ],
+    "next_evolution": [
+      93,
+      94
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Haunter",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "height": 1.60,
+    "weight": 0.1,
+    "weaknesses": [
+      "Ground",
+      "Psychic",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      92
+    ],
+    "next_evolution": [
+      94
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "height": 1.50,
+    "weight": 40.5,
+    "weaknesses": [
+      "Ground",
+      "Psychic",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      92,
+      93
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Onix",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "height": 8.79,
+    "weight": 210.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Drowzee",
+    "types": [
+      "Psychic"
+    ],
+    "height": 0.99,
+    "weight": 32.4,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ],
+    "next_evolution": [
+      97
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Hypno",
+    "types": [
+      "Psychic"
+    ],
+    "height": 1.60,
+    "weight": 75.6,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      96
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Krabby",
+    "types": [
+      "Water"
+    ],
+    "height": 0.41,
+    "weight": 6.5,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      99
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Kingler",
+    "types": [
+      "Water"
+    ],
+    "height": 1.30,
+    "weight": 60.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      98
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Voltorb",
+    "types": [
+      "Electric"
+    ],
+    "height": 0.51,
+    "weight": 10.4,
+    "weaknesses": [
+      "Ground"
+    ],
+    "next_evolution": [
+      101
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Electrode",
+    "types": [
+      "Electric"
+    ],
+    "height": 1.19,
+    "weight": 66.6,
+    "weaknesses": [
+      "Ground"
+    ],
+    "prev_evolution": [
+      100
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Exeggcute",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "height": 0.41,
+    "weight": 2.5,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Ghost"
+    ],
+    "next_evolution": [
+      103
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Exeggutor",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "height": 2.01,
+    "weight": 120.0,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      102
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Cubone",
+    "types": [
+      "Ground"
+    ],
+    "height": 0.41,
+    "weight": 6.5,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "next_evolution": [
+      105
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Marowak",
+    "types": [
+      "Ground"
+    ],
+    "height": 0.99,
+    "weight": 45.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "prev_evolution": [
+      104
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Hitmonlee",
+    "types": [
+      "Fighting"
+    ],
+    "height": 1.50,
+    "weight": 49.8,
+    "weaknesses": [
+      "Flying",
+      "Psychic"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Hitmonchan",
+    "types": [
+      "Fighting"
+    ],
+    "height": 1.40,
+    "weight": 50.2,
+    "weaknesses": [
+      "Flying",
+      "Psychic"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Lickitung",
+    "types": [
+      "Normal"
+    ],
+    "height": 1.19,
+    "weight": 65.5,
+    "weaknesses": [
+      "Fighting"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Koffing",
+    "types": [
+      "Poison"
+    ],
+    "height": 0.61,
+    "weight": 1.0,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "next_evolution": [
+      110
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Weezing",
+    "types": [
+      "Poison"
+    ],
+    "height": 1.19,
+    "weight": 9.5,
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "prev_evolution": [
+      109
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Rhyhorn",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "height": 0.99,
+    "weight": 115.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground"
+    ],
+    "next_evolution": [
+      112
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Rhydon",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "height": 1.91,
+    "weight": 120.0,
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground"
+    ],
+    "prev_evolution": [
+      111
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Chansey",
+    "types": [
+      "Normal"
+    ],
+    "height": 1.09,
+    "weight": 34.6,
+    "weaknesses": [
+      "Fighting"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Tangela",
+    "types": [
+      "Grass"
+    ],
+    "height": 0.99,
+    "weight": 35.0,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "height": 2.21,
+    "weight": 80.0,
+    "weaknesses": [
+      "Fighting"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Horsea",
+    "types": [
+      "Water"
+    ],
+    "height": 0.41,
+    "weight": 8.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      117
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Seadra",
+    "types": [
+      "Water"
+    ],
+    "height": 1.19,
+    "weight": 25.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      116
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Goldeen",
+    "types": [
+      "Water"
+    ],
+    "height": 0.61,
+    "weight": 15.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      119
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Seaking",
+    "types": [
+      "Water"
+    ],
+    "height": 1.30,
+    "weight": 39.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      118
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Staryu",
+    "types": [
+      "Water"
+    ],
+    "height": 0.79,
+    "weight": 34.5,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      121
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "height": 1.09,
+    "weight": 80.0,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Bug",
+      "Ghost"
+    ],
+    "prev_evolution": [
+      120
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Mr. Mime",
+    "types": [
+      "Psychic"
+    ],
+    "height": 1.30,
+    "weight": 54.5,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Scyther",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "height": 1.50,
+    "weight": 56.0,
+    "weaknesses": [
+      "Fire",
+      "Electric",
+      "Ice",
+      "Flying",
+      "Rock"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Jynx",
+    "types": [
+      "Ice",
+      "Psychic"
+    ],
+    "height": 1.40,
+    "weight": 40.6,
+    "weaknesses": [
+      "Fire",
+      "Bug",
+      "Rock",
+      "Ghost"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Electabuzz",
+    "types": [
+      "Electric"
+    ],
+    "height": 1.09,
+    "weight": 30.0,
+    "weaknesses": [
+      "Ground"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Magmar",
+    "types": [
+      "Fire"
+    ],
+    "height": 1.30,
+    "weight": 44.5,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Pinsir",
+    "types": [
+      "Bug"
+    ],
+    "height": 1.50,
+    "weight": 55.0,
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Tauros",
+    "types": [
+      "Normal"
+    ],
+    "height": 1.40,
+    "weight": 88.4,
+    "weaknesses": [
+      "Fighting"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Magikarp",
+    "types": [
+      "Water"
+    ],
+    "height": 0.89,
+    "weight": 10.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "next_evolution": [
+      130
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Gyarados",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "height": 6.50,
+    "weight": 235.0,
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "prev_evolution": [
+      129
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Lapras",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "height": 2.49,
+    "weight": 220.0,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Rock"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Ditto",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.30,
+    "weight": 4.0,
+    "weaknesses": [
+      "Fighting"
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Eevee",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.30,
+    "weight": 6.5,
+    "weaknesses": [
+      "Fighting"
+    ],
+    "next_evolution": [
+      134,
+      135,
+      136
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Vaporeon",
+    "types": [
+      "Water"
+    ],
+    "height": 0.99,
+    "weight": 29.0,
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "prev_evolution": [
+      133
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Jolteon",
+    "types": [
+      "Electric"
+    ],
+    "height": 0.79,
+    "weight": 24.5,
+    "weaknesses": [
+      "Ground"
+    ],
+    "prev_evolution": [
+      133
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Flareon",
+    "types": [
+      "Fire"
+    ],
+    "height": 0.89,
+    "weight": 25.0,
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "prev_evolution": [
+      133
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Porygon",
+    "types": [
+      "Normal"
+    ],
+    "height": 0.79,
+    "weight": 36.5,
+    "weaknesses": [
+      "Fighting"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Omanyte",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "height": 0.41,
+    "weight": 7.5,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "next_evolution": [
+      139
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Omastar",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "height": 0.99,
+    "weight": 35.0,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "prev_evolution": [
+      138
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Kabuto",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "height": 0.51,
+    "weight": 11.5,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "next_evolution": [
+      141
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Kabutops",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "height": 1.30,
+    "weight": 40.5,
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "prev_evolution": [
+      140
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "height": 1.80,
+    "weight": 59.0,
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Ice",
+      "Rock"
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Snorlax",
+    "types": [
+      "Normal"
+    ],
+    "height": 2.11,
+    "weight": 460.0,
+    "weaknesses": [
+      "Fighting"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Articuno",
+    "types": [
+      "Ice",
+      "Flying"
+    ],
+    "height": 1.70,
+    "weight": 55.4,
+    "weaknesses": [
+      "Fire",
+      "Electric",
+      "Rock"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Zapdos",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "height": 1.60,
+    "weight": 52.6,
+    "weaknesses": [
+      "Ice",
+      "Rock"
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Moltres",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "height": 2.01,
+    "weight": 60.0,
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Rock"
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Dratini",
+    "types": [
+      "Dragon"
+    ],
+    "height": 1.80,
+    "weight": 3.3,
+    "weaknesses": [
+      "Ice",
+      "Dragon"
+    ],
+    "next_evolution": [
+      148,
+      149
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Dragonair",
+    "types": [
+      "Dragon"
+    ],
+    "height": 3.99,
+    "weight": 16.5,
+    "weaknesses": [
+      "Ice",
+      "Dragon"
+    ],
+    "prev_evolution": [
+      147
+    ],
+    "next_evolution": [
+      149
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "height": 2.21,
+    "weight": 210.0,
+    "weaknesses": [
+      "Ice",
+      "Rock",
+      "Dragon"
+    ],
+    "prev_evolution": [
+      147,
+      148
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Mewtwo",
+    "types": [
+      "Psychic"
+    ],
+    "height": 2.01,
+    "weight": 122.0,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Mew",
+    "types": [
+      "Psychic"
+    ],
+    "height": 0.41,
+    "weight": 4.0,
+    "weaknesses": [
+      "Bug",
+      "Ghost"
+    ]
+  }
+]

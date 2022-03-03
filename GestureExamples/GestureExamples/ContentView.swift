@@ -22,6 +22,10 @@ struct ContentView: View {
                     Label("Position Example", systemImage: "dial.min.fill")
                 })
                 
+                NavigationLink(destination: CardStackView()) {
+                    Label("Pokemons", systemImage: "flame.fill")
+                }
+                
                 
             }
         }

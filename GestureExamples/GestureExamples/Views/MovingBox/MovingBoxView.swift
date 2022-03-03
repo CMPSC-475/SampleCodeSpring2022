@@ -15,7 +15,7 @@ struct MovingBoxView: View {
     @State var location : CGPoint = CGPoint(x: ScreenSize.width/2, y: ScreenSize.height/2)
     var body: some View {
         ColorSquare(color: .orange)
-//            .draggable(location: $location)
+            .draggable(location: $location)
     }
 }
 
