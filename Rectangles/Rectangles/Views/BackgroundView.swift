@@ -12,7 +12,19 @@ struct BackgroundView: View {
     
     var body: some View {
         ZStack {
+            let dragGesture = DragGesture()
+                .onChanged { value in
+                    if manager.inProgressShape == nil {
+                        manager.newPiece(at: value.location)
+                    } else {
+                        manager.updatePiece(to: value.location)
+                    }
+                }
+                .onEnded { value in
+                    manager.addPiece()
+                }
             Color.gray
+                .gesture(dragGesture)
             
             BottomBar()
         }

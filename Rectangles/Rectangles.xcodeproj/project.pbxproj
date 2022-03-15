@@ -16,6 +16,8 @@
 		3B54CDDC273EF9E3000DE31C /* GameShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54CDDB273EF9E3000DE31C /* GameShape.swift */; };
 		3B54CDDE273EFA7D000DE31C /* CG+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54CDDD273EFA7D000DE31C /* CG+Convenience.swift */; };
 		3B54CE1527401E53000DE31C /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54CE1427401E53000DE31C /* Point.swift */; };
+		C324F6A427E0FC9100A15BD4 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324F6A327E0FC9100A15BD4 /* RectangleView.swift */; };
+		C324F6A627E0FFA700A15BD4 /* Outline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324F6A527E0FFA700A15BD4 /* Outline.swift */; };
 		C34136E427DFECF300EADC31 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34136E327DFECF300EADC31 /* BottomBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		3B54CDDB273EF9E3000DE31C /* GameShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameShape.swift; sourceTree = "<group>"; };
 		3B54CDDD273EFA7D000DE31C /* CG+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CG+Convenience.swift"; sourceTree = "<group>"; };
 		3B54CE1427401E53000DE31C /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		C324F6A327E0FC9100A15BD4 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		C324F6A527E0FFA700A15BD4 /* Outline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outline.swift; sourceTree = "<group>"; };
 		C34136E327DFECF300EADC31 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,8 @@
 				3B54CDD7273EF8E8000DE31C /* GameView.swift */,
 				3B54CDD9273EF93C000DE31C /* BackgroundView.swift */,
 				C34136E327DFECF300EADC31 /* BottomBar.swift */,
+				C324F6A327E0FC9100A15BD4 /* RectangleView.swift */,
+				C324F6A527E0FFA700A15BD4 /* Outline.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,7 +189,9 @@
 				3B54CDDE273EFA7D000DE31C /* CG+Convenience.swift in Sources */,
 				3B54CDD8273EF8E8000DE31C /* GameView.swift in Sources */,
 				3B54CDDC273EF9E3000DE31C /* GameShape.swift in Sources */,
+				C324F6A627E0FFA700A15BD4 /* Outline.swift in Sources */,
 				C34136E427DFECF300EADC31 /* BottomBar.swift in Sources */,
+				C324F6A427E0FC9100A15BD4 /* RectangleView.swift in Sources */,
 				3B54CE1527401E53000DE31C /* Point.swift in Sources */,
 				3B54CDDA273EF93C000DE31C /* BackgroundView.swift in Sources */,
 				3B54CDD6273EF8C1000DE31C /* GameManager.swift in Sources */,

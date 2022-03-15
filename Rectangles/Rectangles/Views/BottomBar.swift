@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct BottomBar: View {
+    @EnvironmentObject var manager : GameManager
+    
     var body: some View {
         VStack {
             Spacer()
             HStack {
                 Spacer()
-                Button(action: {/*TODO: Action*/})
+                Button(action: {manager.shapes.removeAll()})
                 {
                     Image(systemName:"trash.fill")
                 }
