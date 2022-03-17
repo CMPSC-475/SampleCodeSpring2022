@@ -9,16 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            List{
-            NavigationLink("Artboard") {
-                ArtboardView()
-            }
-            NavigationLink("Practice") {
-                PracticeView()
-            }
-            }
-        }
+        ArtboardView()
     }
 }
 

@@ -14,7 +14,6 @@
 		C324F6D327E350F300A15BD4 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324F6D227E350F300A15BD4 /* Shape.swift */; };
 		C324F6D527E351EE00A15BD4 /* ArtboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324F6D427E351EE00A15BD4 /* ArtboardManager.swift */; };
 		C324F6D727E3522000A15BD4 /* ArtboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324F6D627E3522000A15BD4 /* ArtboardView.swift */; };
-		C324F6D927E3556600A15BD4 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324F6D827E3556600A15BD4 /* PracticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		C324F6D227E350F300A15BD4 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		C324F6D427E351EE00A15BD4 /* ArtboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtboardManager.swift; sourceTree = "<group>"; };
 		C324F6D627E3522000A15BD4 /* ArtboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtboardView.swift; sourceTree = "<group>"; };
-		C324F6D827E3556600A15BD4 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 			children = (
 				C324F6C127E3509200A15BD4 /* ContentView.swift */,
 				C324F6D627E3522000A15BD4 /* ArtboardView.swift */,
-				C324F6D827E3556600A15BD4 /* PracticeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C324F6C227E3509200A15BD4 /* ContentView.swift in Sources */,
-				C324F6D927E3556600A15BD4 /* PracticeView.swift in Sources */,
 				C324F6D727E3522000A15BD4 /* ArtboardView.swift in Sources */,
 				C324F6D327E350F300A15BD4 /* Shape.swift in Sources */,
 				C324F6D527E351EE00A15BD4 /* ArtboardManager.swift in Sources */,
