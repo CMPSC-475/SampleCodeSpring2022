@@ -15,7 +15,7 @@ struct AppRow: View {
                 Image(uiImage: uiImage)
             } else {
                 let _ = manager.appImageFor(index: manager.index(for: appInfo)!)
-                EmptyView()
+                ProgressView()
             }
             VStack {
                 Text(appInfo.title)

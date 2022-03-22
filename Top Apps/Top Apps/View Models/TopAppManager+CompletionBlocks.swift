@@ -29,7 +29,6 @@ extension TopAppManager {
             DispatchQueue.main.sync {
                 self.topApps = _topApps
             }
-            self.retriveImages()
         }
         
         task.resume()
@@ -44,6 +43,7 @@ extension TopAppManager {
     }
     
     func appImageFor(index i: Int) {
+        // print("get image for index: \(i)")
         let urlSession = URLSession.shared
         let url = URL(string: topApps[i].imageURL)!
         let task = urlSession.downloadTask(with: url) { localUrl, response, error in
