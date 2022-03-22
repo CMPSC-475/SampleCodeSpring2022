@@ -10,7 +10,10 @@ struct AppRow: View {
     var appInfo : AppInfo
     var body : some View {
         HStack {
-            //TODO: Image goes here
+            if let data = appInfo.imageData {
+                let uiImage = UIImage(data: data)!
+                Image(uiImage: uiImage)
+            }
             VStack {
                 Text(appInfo.title)
                 Text(appInfo.author)
