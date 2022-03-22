@@ -13,6 +13,9 @@ struct AppRow: View {
             if let data = appInfo.imageData {
                 let uiImage = UIImage(data: data)!
                 Image(uiImage: uiImage)
+            } else {
+                let _ = manager.appImageFor(index: manager.index(for: appInfo)!)
+                EmptyView()
             }
             VStack {
                 Text(appInfo.title)
