@@ -13,10 +13,11 @@ struct AppRow: View {
             if let data = appInfo.imageData {
                 let uiImage = UIImage(data: data)!
                 Image(uiImage: uiImage)
-            } else {
-                let _ = manager.appImageFor(index: manager.index(for: appInfo)!)
-                ProgressView()
             }
+//            else {
+//                let _ = manager.appImageFor(index: manager.index(for: appInfo)!)
+//                ProgressView()
+//            }
             VStack {
                 Text(appInfo.title)
                 Text(appInfo.author)

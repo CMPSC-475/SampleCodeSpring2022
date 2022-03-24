@@ -22,6 +22,12 @@ extension TopAppManager {
             }
             guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
                  //TODO: Handle Error
+                
+                DispatchQueue.main.sync{
+                    self.httpError = true
+                }
+                
+                
                  return
              }
             let _topApps = self.appFrom(data: data!)
@@ -43,7 +49,7 @@ extension TopAppManager {
     }
     
     func appImageFor(index i: Int) {
-        // print("get image for index: \(i)")
+        print("get image for index: \(i)")
         let urlSession = URLSession.shared
         let url = URL(string: topApps[i].imageURL)!
         let task = urlSession.downloadTask(with: url) { localUrl, response, error in

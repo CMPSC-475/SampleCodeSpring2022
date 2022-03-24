@@ -9,6 +9,7 @@ import Foundation
 class TopAppManager : ObservableObject{
     // downloaded app information
     @Published var topApps = [AppInfo]()
+    @Published var httpError = false
     
     
     //json feed from Apple for Top Paid Apps
@@ -16,7 +17,8 @@ class TopAppManager : ObservableObject{
 
     //TODO: retrive app data
     init() {
-        retrieveData()
+        //retrieveData()
+        retriveWithOperations()
     }
     
     // find index of an app

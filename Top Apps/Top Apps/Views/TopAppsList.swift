@@ -20,6 +20,15 @@ struct TopAppsList: View {
 
                 }
             }
+            .refreshable {
+                
+            }
+            .alert("HTTP ERROR", isPresented: $manager.httpError, actions: {
+                Button("Try Again") {
+                    
+                }
+                Button("Cancel", role: .cancel){}
+            })
             .navigationTitle(Text("Top Apps"))
 
         }
