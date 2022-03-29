@@ -18,6 +18,7 @@
 		3B3412C32726EDE800971EFD /* AppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3412C22726EDE800971EFD /* AppRow.swift */; };
 		C335747E27EA4C6C00D85D14 /* TopAppManager+CompletionBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C335747D27EA4C6C00D85D14 /* TopAppManager+CompletionBlocks.swift */; };
 		C3F9C3C027ECDA09001A5D89 /* TopManager+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9C3BF27ECDA09001A5D89 /* TopManager+Operations.swift */; };
+		C3F9C3C227F36EC2001A5D89 /* TopManager+async.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9C3C127F36EC2001A5D89 /* TopManager+async.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3B3412C22726EDE800971EFD /* AppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRow.swift; sourceTree = "<group>"; };
 		C335747D27EA4C6C00D85D14 /* TopAppManager+CompletionBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopAppManager+CompletionBlocks.swift"; sourceTree = "<group>"; };
 		C3F9C3BF27ECDA09001A5D89 /* TopManager+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopManager+Operations.swift"; sourceTree = "<group>"; };
+		C3F9C3C127F36EC2001A5D89 /* TopManager+async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopManager+async.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3B3412BE2726E9ED00971EFD /* TopAppManager.swift */,
 				C335747D27EA4C6C00D85D14 /* TopAppManager+CompletionBlocks.swift */,
 				C3F9C3BF27ECDA09001A5D89 /* TopManager+Operations.swift */,
+				C3F9C3C127F36EC2001A5D89 /* TopManager+async.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				3B3412BF2726E9ED00971EFD /* TopAppManager.swift in Sources */,
 				3B3412AA2726E8FF00971EFD /* Top_AppsApp.swift in Sources */,
 				3B3412C32726EDE800971EFD /* AppRow.swift in Sources */,
+				C3F9C3C227F36EC2001A5D89 /* TopManager+async.swift in Sources */,
 				3B3412BD2726E99600971EFD /* TopAppsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
