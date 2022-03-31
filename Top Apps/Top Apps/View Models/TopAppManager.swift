@@ -9,7 +9,8 @@ import Foundation
 class TopAppManager : ObservableObject{
     // downloaded app information
     @Published var topApps = [AppInfo]()
-    @Published var httpError = false
+    //@Published var httpError = false
+    @Published var httpError : HTTPError?
     
     
     //json feed from Apple for Top Paid Apps

@@ -17,7 +17,8 @@ extension TopAppManager {
                  //TODO: Handle Error
                 
                 DispatchQueue.main.sync{
-                    self.httpError = true
+                    // self.httpError = true
+                    self.httpError = HTTPError(response: response as! HTTPURLResponse)
                 }
                 return
             }
@@ -26,7 +27,8 @@ extension TopAppManager {
             DispatchQueue.main.sync {
                 self.topApps = _topApps
             }
-            await asyncReetriveImages()
+            //await asyncReetriveImages()
+            await concurrentRetrieveImages()
         } catch {
             print(error)
         }
@@ -56,6 +58,29 @@ extension TopAppManager {
         let url = URL(string: topApps[i].imageURL)!
         let (data, _ ) = try await URLSession.shared.data(from: url)
         return data
+    }
+    
+    func concurrentRetrieveImages() async {
+        do {
+            try await withThrowingTaskGroup(of: (Data, Int).self, body: { group in
+                for i in topApps.indices {
+                    group.addTask {
+                        async let data = self.asyncRetriveImage(index: i)
+                        return try await (data, i)
+                    }
+                }
+                
+                for try await (data, i) in group {
+                    DispatchQueue.main.async {
+                        self.topApps[i].addImageData(data)
+                    }
+                }
+                
+            })
+        } catch {
+            print(error)
+        }
+        
     }
     
     

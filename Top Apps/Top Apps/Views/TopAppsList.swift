@@ -20,15 +20,20 @@ struct TopAppsList: View {
 
                 }
             }
-            .refreshable {
-                
-            }
-            .alert("HTTP ERROR", isPresented: $manager.httpError, actions: {
-                Button("Try Again") {
-                    
+            .overlay(alignment: .top, content: {
+                if manager.httpError != nil {
+                    ErrorView(error: $manager.httpError)
                 }
-                Button("Cancel", role: .cancel){}
             })
+            .refreshable {
+                await manager.asyncRetrieveData()
+            }
+            
+//            .alert("HTTP ERROR", isPresented: $manager.httpError, actions: {
+//                Button("Try Again") {
+//                }
+//                Button("Cancel", role: .cancel){}
+//            })
             .navigationTitle(Text("Top Apps"))
 
         }
