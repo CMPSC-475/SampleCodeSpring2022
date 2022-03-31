@@ -50,5 +50,14 @@ extension TopAppManager {
             }
         }
     }
+    
+    // helper method to get image for application indexed at i
+    func asyncRetriveImage(index i: Int ) async throws -> Data {
+        let url = URL(string: topApps[i].imageURL)!
+        let (data, _ ) = try await URLSession.shared.data(from: url)
+        return data
+    }
+    
+    
 }
     
