@@ -28,13 +28,27 @@ class TaskManager :ObservableObject {
         formatter.string(from: date)
     }
     
-    func deleteItem(indexSet: IndexSet) {
+    func delete(indexSet : IndexSet) {
         let _ = items.remove(atOffsets: indexSet)
     }
     
-    func move(fromOffsets indexSet: IndexSet, toOffset index: Int){
+    func deleteItems(itemIDS: Set<UUID>?) {
+        guard let itemIDS = itemIDS else {return}
+        let offsets = Array(itemIDS).compactMap {id in items.firstIndex(where: {item in item.id == id})}
+
+        let _ = items.remove(atOffsets: IndexSet(offsets))
+        
+    }
+    
+    
+    func move(fromOffsets indexSet:IndexSet, toOffset index:Int) {
         items.move(fromOffsets: indexSet, toOffset: index)
     }
     
+    
+    func addItem(title:String) {
+        let item = Item(title: title)
+        items.insert(item, at: 0)
+    }
 
 }

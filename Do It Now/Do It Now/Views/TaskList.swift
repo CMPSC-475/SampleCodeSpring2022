@@ -9,31 +9,48 @@ import SwiftUI
 
 struct TaskList: View {
     @EnvironmentObject var manager : TaskManager
+    @State var isAdding = false
+    @State var indexSet : Set<UUID> = []
+    @State var editMode : EditMode = .inactive
     
     var body: some View {
         NavigationView {
             List {
                 ForEach($manager.items) {$item in
                     ItemRow(item: $item)
-                        
                 }
-                .onDelete { index in
-                    manager.deleteItem(indexSet: index)
+                .onMove {indexSet, offset in
+                    manager.move(fromOffsets: indexSet, toOffset: offset)
                 }
-                .onMove { index, offset in
-                    manager.move(fromOffsets: index, toOffset: offset)
+                .onDelete {indexSet in
+                    manager.delete(indexSet: indexSet)
                 }
             }
-            
             .navigationTitle("Do It Now")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    EditButton()
-                }
-                
-                
+            
+            
+            .sheet(isPresented: $isAdding,
+                   onDismiss: nil) {
+                AddView()
             }
+            
+                   .toolbar {
+                       ToolbarItem(placement: .primaryAction) {
+                           EditButton()
+                       }
+                       ToolbarItem(placement: .navigationBarLeading) {
+                           Button(action:{isAdding = true}) {
+                               Image(systemName: "plus.square")
+                           }
+                       }
+                       ToolbarItem(placement: .bottomBar) {
+                           Button(action: {manager.deleteItems(itemIDS: indexSet)}) {
+                               Image(systemName: "trash")
+                                   .disabled(indexSet.isEmpty)
+                           }
+                       }
+                   }
         }
     }
 }
@@ -41,5 +58,6 @@ struct TaskList: View {
 struct TaskList_Previews: PreviewProvider {
     static var previews: some View {
         TaskList()
+            .environmentObject(TaskManager())
     }
 }
