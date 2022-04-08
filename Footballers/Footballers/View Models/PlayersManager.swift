@@ -21,9 +21,7 @@ class PlayersManager : ObservableObject {
         teams = []  // need an initial value
         storageManager = _storageManager
         footballers = _footballers
-        
-        //TODO: - retrive teams for players
-        //teams = teams(for: _footballers)
+        teams = teams(for: _footballers)
     }
     
     
