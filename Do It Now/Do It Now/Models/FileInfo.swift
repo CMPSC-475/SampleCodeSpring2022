@@ -1,6 +1,5 @@
 //
 //  FileInfo.swift
-//  US States
 //
 //  Created by jjh9 on 9/13/21.
 //  Copyright © 2021 jjh9. All rights reserved.

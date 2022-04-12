@@ -1,13 +1,13 @@
 //
-//  TaskList.swift
+//  MOTaskList.swift
 //  Do It Now
 //
-//  Created by jjh9 on 10/11/21.
+//  Created by Hannan, John Joseph on 10/17/21.
 //
 
 import SwiftUI
 
-struct TaskList: View {
+struct MOTaskList: View {
     @EnvironmentObject var manager : TaskManager
     @State var indexSet : Set<UUID> = []
     @State var editMode : EditMode = .inactive
@@ -36,8 +36,8 @@ struct TaskList: View {
     }
 }
 
-struct TaskList_Previews: PreviewProvider {
-    static var previews: some View {
-        TaskList()
-    }
-}
+//struct MOTaskList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MOTaskList()
+//    }
+//}

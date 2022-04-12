@@ -1,17 +1,16 @@
 //
-//  ItemRow.swift
+//  MOItemRow.swift
 //  Do It Now
 //
-//  Created by jjh9 on 10/11/21.
+//  Created by Hannan, John Joseph on 10/17/21.
 //
 
 import SwiftUI
 
-struct ItemRow: View {
+struct MOItemRow: View {
     @EnvironmentObject var manager : TaskManager
+    
     @Binding var item:Item
-    
-    
     let fontSize : CGFloat = 22
     var body: some View {
         HStack {
@@ -28,8 +27,8 @@ struct ItemRow: View {
     }
 }
 
-struct ItemRow_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemRow(item: .constant(Item.standard))
-    }
-}
+//struct MOItemRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MOItemRow()
+//    }
+//}

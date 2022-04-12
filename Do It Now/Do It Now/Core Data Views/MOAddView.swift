@@ -1,13 +1,13 @@
 //
-//  AddView.swift
+//  MOAddView.swift
 //  Do It Now
 //
-//  Created by Hannan, John Joseph on 10/13/21.
+//  Created by Hannan, John Joseph on 10/17/21.
 //
 
 import SwiftUI
 
-struct AddView: View {
+struct MOAddView: View {
     @EnvironmentObject var manager : TaskManager
     @Binding var isAdding : Bool
     @Environment(\.dismiss) var dismiss
@@ -20,7 +20,7 @@ struct AddView: View {
                 if isValid(text: text) {
                     manager.addItem(title: text)
                     dismiss()
-                    isAdding = false 
+                    isAdding = false
                 } else {
                     showAlert = true
                 }
@@ -37,8 +37,8 @@ struct AddView: View {
 
 }
 
-struct AddView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddView(isAdding: .constant(true))
-    }
-}
+//struct MOAddView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MOAddView()
+//    }
+//}
