@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct MOFinishButton: View {
-    @EnvironmentObject var manager : TaskManager
-    @Binding var item:Item
+    //@EnvironmentObject var manager : TaskManager
+    @Environment(\.managedObjectContext) private var viewContext
+
+    
+    @ObservedObject var item:ItemMO
     var iconName : String {item.done ? "checkmark.square" : "square" }
     var body: some View {
         Button(action: {item.done.toggle()}) {

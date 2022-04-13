@@ -1,13 +1,13 @@
 //
-//  TeamsListView.swift
+//  MOTeamListView.swift
 //  Footballers
 //
-//  Created by jjh9 on 10/11/21.
+//  Created by jjh9 on 10/19/21.
 //
 
 import SwiftUI
 
-struct TeamsListView: View {
+struct MOTeamListView: View {
     @EnvironmentObject var manager : PlayersManager
 
     var body: some View {
@@ -30,15 +30,8 @@ struct TeamsListView: View {
     }
 }
 
-struct TeamHeaderView :View {
-    var title: String
-    var body: some View {
-        Text(title).font(Font.largeTitle)
-    }
-}
-
-struct TeamsListView_Previews: PreviewProvider {
+struct MOTeamListView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamsListView()
+        MOTeamListView()
     }
 }

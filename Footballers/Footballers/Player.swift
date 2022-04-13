@@ -22,7 +22,7 @@ class Player : Codable, Identifiable {
     //var teamname : String {return team}
     var id : String {fullname}
 
-    static let standard = Player(firstname: "Alexi", lastname: "Lalas",  team: "Barcelona", country: "United States")
+    static let standard = Player(firstname: "Alexi", lastname: "Lalas", team: "Barcelona", country: "United States")
     
     enum CodingKeys : String, CodingKey {
         case firstname
@@ -40,7 +40,7 @@ class Player : Codable, Identifiable {
         self.teamname = team
         self.country = country
         self.rank = 0
-        self.info = "lorem ipsum"
+        self.info = ""
         self.isFavorite = false
     }
 }

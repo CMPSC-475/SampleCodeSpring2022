@@ -9,10 +9,11 @@ import Foundation
 
 extension PlayersManager {
     
-    //TODO: -
     func teams(for footballers: [Player]) -> [Team] {
-        var _teams = [Team]()
         
+        var _teams = [Team]()
+
+        //TODO: create teams based on all the player's team name
         for player in footballers {
             if let team = _teams.first(where: {(t) -> Bool in t.name == player.teamname}) {
                 team.addPlayer(player)
@@ -21,10 +22,9 @@ extension PlayersManager {
                 newTeam.addPlayer(player)
                 _teams.append(newTeam)
             }
+                
         }
-        
-        return _teams
-        
+        return  _teams
     }
     
 }

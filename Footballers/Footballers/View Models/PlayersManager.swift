@@ -7,13 +7,14 @@
 
 import Foundation
 typealias Players = [Player]
+typealias Teams = [Team]
 
 class PlayersManager : ObservableObject {
     let storageManager : StorageManager<Player>
     
     typealias Players = [Player]
     @Published var footballers : Players
-    @Published var teams : [Team]
+    @Published var teams : Teams
     
     init() {
         let _storageManager = StorageManager<Player>(name: "footballers")
@@ -28,5 +29,19 @@ class PlayersManager : ObservableObject {
     //MARK: - Saving Data
     func saveData() {
         storageManager.save(modelData: footballers)
+    }
+    
+    //MARK: filtering
+    func playerSatisfies(player:Player, searchText:String) -> Bool {
+        player.lastname.hasPrefix(searchText)
+    }
+    
+    //Mark: - Edits
+    func addPlayer(player:Player) {
+        footballers.append(player)
+        if let team = teams.first(where: { (aTeam) -> Bool in
+            aTeam.name == player.teamname}) {
+            team.addPlayer(player)
+        }
     }
 }

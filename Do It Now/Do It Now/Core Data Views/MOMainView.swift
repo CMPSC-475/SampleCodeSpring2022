@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct MOMainView: View {
-    @EnvironmentObject var manager : TaskManager
+    //@EnvironmentObject var manager : TaskManager
+
+    
     @State var isAdding = false
     
     var body: some View {
         NavigationView {
             VStack {
                 if isAdding {
-                    AddView(isAdding: $isAdding)
+                    MOAddView(isAdding: $isAdding)
                         .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .trailing)))
                 }
                 
-                TaskList()
+                MOTaskList()
             }
 
             .animation(.easeInOut, value: isAdding)

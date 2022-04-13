@@ -9,11 +9,23 @@ import SwiftUI
 
 @main
 struct Do_It_NowApp: App {
+    let persistenceController = PersistenceController.shared
+    @Environment(\.scenePhase) private var scenePhase
+
     @StateObject var manager = TaskManager()
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MOMainView()
                 .environmentObject(manager)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onChange(of: scenePhase) {phase in
+                    switch phase {
+                    case .inactive, .background:
+                        try? persistenceController.container.viewContext.save()
+                    default:
+                        break
+                    }
+                }
         }
     }
 }

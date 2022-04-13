@@ -12,8 +12,7 @@ struct PlayerRowView: View {
     var body: some View {
         VStack {
         Text(player.fullname)
-        Text(player.teamname)
-        //Text(player.team!.name).italic()
+        Text(player.teamname).italic()
         }
     }
 }

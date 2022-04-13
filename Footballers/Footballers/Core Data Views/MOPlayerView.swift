@@ -1,13 +1,13 @@
 //
-//  PlayerView.swift
+//  MOPlayerView.swift
 //  Footballers
 //
-//  Created by jjh9 on 10/11/21.
+//  Created by jjh9 on 10/19/21.
 //
 
 import SwiftUI
 
-struct PlayerView: View {
+struct MOPlayerView: View {
     @Binding var player : Player
     @State var editMode : EditMode = .inactive
 
@@ -36,8 +36,8 @@ struct PlayerView: View {
     }
 }
 
-struct PlayerView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayerView(player: .constant(Player.standard))
-    }
-}
+//struct MOPlayerView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MOPlayerView()
+//    }
+//}

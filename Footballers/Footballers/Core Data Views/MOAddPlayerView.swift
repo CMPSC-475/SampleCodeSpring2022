@@ -1,13 +1,13 @@
 //
-//  AddPlayerView.swift
+//  MOAddPlayerView.swift
 //  Footballers
 //
-//  Created by jjh9 on 10/11/21.
+//  Created by jjh9 on 10/19/21.
 //
 
 import SwiftUI
 
-struct AddPlayerView: View {
+struct MOAddPlayerView: View {
     @EnvironmentObject var manager : PlayersManager
     @Environment(\.dismiss) var dismiss
     
@@ -74,8 +74,8 @@ struct AddPlayerView: View {
     private var isValid : Bool {[firstname,lastname,teamname,country].allSatisfy{!$0.isEmpty}}
 }
 
-struct AddPlayerView_Previews: PreviewProvider {
+struct MOAddPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPlayerView()
+        MOAddPlayerView()
     }
 }

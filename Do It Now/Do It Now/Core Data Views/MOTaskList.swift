@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct MOTaskList: View {
-    @EnvironmentObject var manager : TaskManager
-    @State var indexSet : Set<UUID> = []
+    //@EnvironmentObject var manager : TaskManager
+    @Environment(\.managedObjectContext) private var viewContext
+
+    
+    @State var indexSet : Set<ItemMO> = []
     @State var editMode : EditMode = .inactive
+    
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \ItemMO.date, ascending: true)],
+        //predicate: NSPredicate(format: "name contains 'n'"),
+        animation: .default)
+    private var items: FetchedResults<ItemMO>
     
     var body: some View {
         
         List(selection: $indexSet) {
             
-            ForEach($manager.items) {$item in
-                SwipeRow(item: $item)
+            ForEach(items) {item in
+                MOSwipeRow(item: item)
             }
         }
         
@@ -26,7 +35,7 @@ struct MOTaskList: View {
                 EditButton()
             }
             ToolbarItem(placement: .bottomBar) {
-                Button(action: {manager.deleteItems(itemIDS: indexSet)}) {
+                Button(action: {indexSet.forEach({viewContext.delete($0)})}) {
                     Image(systemName: "trash")
                 }
                 .disabled(indexSet.isEmpty)

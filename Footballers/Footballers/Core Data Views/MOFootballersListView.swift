@@ -1,26 +1,32 @@
 //
-//  FootballersListView.swift
+//  MOFootballersListView.swift
 //  Footballers
 //
-//  Created by jjh9 on 10/11/21.
+//  Created by jjh9 on 10/19/21.
 //
 
 import SwiftUI
 
-struct FootballersListView: View {
+struct MOFootballersListView: View {
     @EnvironmentObject var manager : PlayersManager
+    @Environment(\.managedObjectContext) private var viewContext
+    
     @State var showingAddPlayer : Bool = false
     
     @State private var searchText = ""
     
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Player.lastname, ascending: true)],
+        animation: .default)
+    private var footballers: FetchedResults<PlayerMO>
     
     var body: some View {
         List {
             SearchBar(searchText: $searchText)
-            ForEach($manager.footballers) {$player in
+            ForEach(footballers) {player in
                 if manager.playerSatisfies(player: player, searchText: searchText) {
-                    NavigationLink(destination: PlayerView(player: $player)) {
-                        PlayerRowView(player: player)
+                    NavigationLink(destination: MOPlayerView(player: player)) {
+                        MOPlayerRowView(player: player)
                     }
                 }
             }
@@ -39,8 +45,8 @@ struct FootballersListView: View {
     }
 }
 
-struct FootballersView_Previews: PreviewProvider {
+struct MOFootballersListView_Previews: PreviewProvider {
     static var previews: some View {
-        FootballersListView()
+        MOFootballersListView()
     }
 }
