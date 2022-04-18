@@ -20,7 +20,7 @@ struct Do_It_NowApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .onChange(of: scenePhase) {phase in
                     switch phase {
-                    case .inactive, .background:
+                    case .inactive:
                         try? persistenceController.container.viewContext.save()
                     default:
                         break

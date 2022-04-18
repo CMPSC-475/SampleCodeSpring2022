@@ -9,14 +9,17 @@ import SwiftUI
 
 struct MOTeamListView: View {
     @EnvironmentObject var manager : PlayersManager
-
+    var teams : FetchedResults<TeamMO>
+    let playerOrder = {(player1:PlayerMO, player2:PlayerMO) -> Bool in player1.lastname < player2.lastname}
+    
     var body: some View {
         List{
-            //TODO:  Create sections for each team. Each section contains all the players on the team roster
-            ForEach(manager.teams) {team in
+
+            ForEach(teams) {team in
+                let orderedRoster = (Array(team.roster).sorted(by: playerOrder))
                 Section {
-                    ForEach (team.roster) {player in
-                        PlayerRowView(player: player)
+                    ForEach (orderedRoster) {player in
+                        MOPlayerRowView(player: player)
                     }
                     
                 } header: {
@@ -30,8 +33,8 @@ struct MOTeamListView: View {
     }
 }
 
-struct MOTeamListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MOTeamListView()
-    }
-}
+//struct MOTeamListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MOTeamListView()
+//    }
+//}

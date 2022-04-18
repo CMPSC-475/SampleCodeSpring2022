@@ -10,7 +10,7 @@ import SwiftUI
 struct MOMainView: View {
     //@EnvironmentObject var manager : TaskManager
 
-    
+    @State var isAscending = true
     @State var isAdding = false
     
     var body: some View {
@@ -21,7 +21,7 @@ struct MOMainView: View {
                         .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .trailing)))
                 }
                 
-                MOTaskList()
+                MOTaskList() //(isAscending: isAscending)
             }
 
             .animation(.easeInOut, value: isAdding)
@@ -35,9 +35,11 @@ struct MOMainView: View {
                     }
                 }
 
+
             }
         }
     }
+
 }
 
 struct MOMainView_Previews: PreviewProvider {

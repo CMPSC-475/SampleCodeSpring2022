@@ -15,7 +15,6 @@ struct MOAddView: View {
     @Environment(\.dismiss) var dismiss
     @State var text : String = ""
     @State var showAlert = false
-    @State var alertMessage : String = ""
     
     var body: some View {
         TextField("Enter New Item", text: $text)
@@ -25,24 +24,16 @@ struct MOAddView: View {
                     item.title = text
                     item.date = Date()
                     item.done = false
-                    do {
-                        try viewContext.save()
-                    } catch {
-                        alertMessage = "Error saving added item"
-                        showAlert = true
-                    }
-                     
                     dismiss()
                     isAdding = false
                 } else {
-                    alertMessage = "Item cannot be empty"
                     showAlert = true
                 }
             }
             .textFieldStyle(.roundedBorder)
             .padding(20)
            
-            .alert(alertMessage, isPresented: $showAlert, actions: {})
+            .alert("Item cannot be empty", isPresented: $showAlert, actions: {})
     }
     
     func isValid(text:String) -> Bool {
